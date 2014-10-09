@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,11 +41,12 @@
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 				<ul class="dropdown-menu">
+				  <li><a href="inking.html">Inking</a></li>
 				  <li><a href="tui.html">Tangible User Interface</a></li>
-				  <li><a href="skweezee.html">Skweezees</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
 				  <li><a href="letsteach.html">Let's Teach</a></li>
 				  <li><a href="cabage.html">Cabage</a></li>
-				  <li><a href="eventapp.html">Event Application</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="chemicable.html">Chemicable</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
@@ -56,6 +59,41 @@
 	  </div>
 	</nav>
   
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
     <div class="container" style="padding-left: 5%; padding-right: 5%">
 		<div class="col-sm-6 col-md-4 ">
 			<div class="thumbnail" width="100%" style="padding:0%">
@@ -67,11 +105,18 @@
 					<b>Project Duration:</b>
 					July '12 - November '12<br><br>
 					<b>Publication:</b>
-					<a href="content/_letsteach.pdf"  target="_blank">Mehul Agarwal, Himanshu Bansal & Keyur Sorathia, “Incorporating Collaboration to Foster Voluntary Teaching”, in workshop on Intelligent User interfaces for Developing Regions (IUIDR), International Conference on Intelligent User Interfaces 2013, CA, USA (19-22nd March).</a><br><br>
+					<a href="content/_letsteach.pdf"  target="_blank">Mehul Agarwal, Himanshu Bansal & Keyur Sorathia, “Incorporating Collaboration to Foster Voluntary Teaching”, in workshop on Intelligent User interfaces for Developing Regions (IUIDR), International Conference on Intelligent User Interfaces 2013, CA, USA (19-22nd March).</a>
+					<!--
+					<br><br>
 					<b>Development:</b>
 					https://github.com/shashankgroovy/lets_teach
+					-->
 					</div>
 				</p>
+				<br>
+				<a href="image/cover-03.jpg" data-gallery>
+				<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
+				</a>
 			</div>
 		</div>
 		
@@ -80,28 +125,36 @@
 			  <h1 id="navbar">Navbar</h1>
 			</div>
 			-->
-			<h1><b>Lets's Teach</b></h1>
-			<h4>Incorporating Colaboration to Foster Voluntary Teaching</h4>
+			<span class="project_heading">
+				<h1>Lets's Teach</h1>
+				<h4>Incorporating Colaboration to Foster Voluntary Teaching</h4>
+			</span>
 			<hr>
 			<div class="project_content">
 				<h4>Brief</h4>
+					<p>Many voluntary teachers discontinue voluntary teaching, many people who want to become voluntary teachers do not start teaching do to their inhibitions. We experiment with a collobarative teaching method for voluntary teachers. We propose a model where teachers can collaborate (both offline and online) to take a class. So instead of one teacher taking a class, multiple teachers can collaborate to take a class.</p>
+				
+				<hr>
+				
+				<h4>Introduction</h4>
 					<p>To provide a platform for volunteer teachers that can cater to problems occurring during teaching. We aim to do this by providing them tools and resources like open source teaching material, discussion forums etc. This in-turn would help them to initiate and continue voluntary teaching resulting in better life for underprivileged children.</p><br>
 					
 				<h4>Research</h4>
-					<img src="image/letsteach/l2.jpg" alt="..." width="100%">
-					<p>We started our research with mess workers in our hostel and asked about their past education experience, their daily activities etc. Next, we went to Shishugram, an orphanage home near IIT Guwahati campus. We interviewed the manager of Shishugram about education of the children. From there, we came to know about a group of girls teaching those children. We interviewed them about their motivation, their teaching experience, methods and problems they faced during teaching. We found some other voluntary teachers around campus and interviewed them similarly. We also interviewed some people doing probable (future) voluntary teaching and asked them about their any past voluntary actions related to helping any underprivileged children and reasons why they were not taking steps if they were concerned.
-					<img src="image/letsteach/l1.jpg" width="100%">
-					<br><br>
-					Simultaneously we went through some research papers on literacy, education in India and on voluntary teaching. Our purpose behind reading these papers was first, to find the current trends and their reasons in Indian education sector and second, to understand different paradigms and aspects of voluntary teaching. We also researched about other projects happened or happening around the world to educate economically backward people to know various dimensions of our projects.</p><br>
+					<p><a href="image/letsteach/l2.jpg" title="Project Flow" data-gallery> <img src="image/letsteach/l2.jpg" alt="Project Flow" width="100%"> </a></p>
+					<p>We started our research with mess workers in our hostel and asked about their past education experience, their daily activities etc. Next, we went to Shishugram, an orphanage home near IIT Guwahati campus. We interviewed the manager of Shishugram about education of the children. From there, we came to know about a group of girls teaching those children. We interviewed them about their motivation, their teaching experience, methods and problems they faced during teaching. We found some other voluntary teachers around campus and interviewed them similarly. We also interviewed some people doing probable (future) voluntary teaching and asked them about their any past voluntary actions related to helping any underprivileged children and reasons why they were not taking steps if they were concerned.</p>
+					<p><a href="image/letsteach/l1.jpg" title="User Study" data-gallery> <img src="image/letsteach/l1.jpg" alt="User Study" width="100%"> </a></p>
+					<p>Simultaneously we went through some research papers on literacy, education in India and on voluntary teaching. Our purpose behind reading these papers was first, to find the current trends and their reasons in Indian education sector and second, to understand different paradigms and aspects of voluntary teaching. We also researched about other projects happened or happening around the world to educate economically backward people to know various dimensions of our projects.</p><br>
 					
 				<h4>Affinity Analysis</h4>
+					<p class="col-sm-12 col-md-6"><a href="image/letsteach/l5.jpg" title="Typical Flow of Voluntary Teachers" data-gallery> <img src="image/letsteach/l5.jpg" LT="Typical Flow of Voluntary Teachers" width="100%"> </a> </p>
 					<p>We gathered all the user statements, observations and divided them into four major categories of problem point namely- Management, Problem occurring due to students, Problem occurring during teaching and Problem in Initiation of Teaching.</p><br>
 					
 				<h4>Proposed Concept</h4>
-					<p>From various design concepts, we decided to focus upon collaboration in voluntary teaching and design a collaborative teaching platform for teachers. After a lot of brain-storming we chose this concept we found out that this has potential to cater many of the problems like doubts, management, study material, confidence and it would also them keep motivated.<br><br>
-					We came up with a concept of collaborative teaching. The major work in collaborative teaching is done to increase interdisciplinary learning in college and high school but its use in volunteerism is still a field that needs to be explored and nurtured. In collaborative teaching instead of single teacher taking class there could be multiple teachers taking class and thereby reducing dependency on a single person. The collaboration can be <b>local or online based</b>.</p><br>
+					<p>From various design concepts, we decided to focus upon collaboration in voluntary teaching and design a collaborative teaching platform for teachers. After a lot of brain-storming we chose this concept we found out that this has potential to cater many of the problems like doubts, management, study material, confidence and it would also them keep motivated.</p>
+					<p>We came up with a concept of collaborative teaching. The major work in collaborative teaching is done to increase interdisciplinary learning in college and high school but its use in volunteerism is still a field that needs to be explored and nurtured. In collaborative teaching instead of single teacher taking class there could be multiple teachers taking class and thereby reducing dependency on a single person. The collaboration can be <b>local or online based</b>.</p><br>
 					
 				<h4>Activity</h4>
+					<p>
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
@@ -114,30 +167,30 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
 						<div class="item active">
-						  <img src="image/letsteach/l3_1.jpg" alt="...">
+						  <a href="image/letsteach/l3_1.jpg" title="Collaborative Teaching" data-gallery> <img src="image/letsteach/l3_3.jpg" alt="Collaborative Teaching"> </a>
 						  <div class="carousel-caption">
-							...
+							Collaborative Teaching
 						  </div>
 						</div>
 						
 						<div class="item">
-						  <img src="image/letsteach/l3_2.jpg" alt="...">
+						  <img src="image/letsteach/l3_1.jpg" alt="Teacher observing student while other teacher teaches">
 						  <div class="carousel-caption">
-							...
+							Teacher observing student while other teacher teaches
 						  </div>
 						</div>
 						
 						<div class="item">
-						  <img src="image/letsteach/l3_3.jpg" alt="...">
+						  <a href="image/letsteach/l3_2.jpg" title="Student showing improved attention" data-gallery> <img src="image/letsteach/l3_2.jpg" alt="Student showing improved attention"> </a>
 						  <div class="carousel-caption">
-							...
+							Student showing improved attention
 						  </div>
 						</div>
 						
 						<div class="item">
-						  <img src="image/letsteach/l3_4.jpg" alt="...">
+						  <a href="image/letsteach/l3_4.jpg" title="Increased interactivity as a consequence of collaboration" data-gallery> <img src="image/letsteach/l3_4.jpg" alt="Increased interactivity as a consequence of collaboration"> </a>
 						  <div class="carousel-caption">
-							...
+							Increased interactivity as a consequence of collaboration
 						  </div>
 						</div>
 					  </div>
@@ -150,24 +203,25 @@
 						<span class="glyphicon glyphicon-chevron-right"></span>
 					  </a>
 					</div>
+					</p>
 					<p>An activity was conducted where two teachers were asked to collaboratively take a class. This included choosing a topic, planning the content, managing the class. They choose a general topic i.e. Solar Systems that can be taught to students of various age groups. The activity aimed to investigate the impact of collaboration in conventional teaching methods with respect to- Attention, Quality, Co-ordination, Catering Difficulties, Preplanning and Experience. Observation was done during the collaborative class followed by interviews. The insights from the activity and user study was used to ideate a web-app that can support voluntary teachers in their task of teaching.</p><br>
 					
 				<h4>Ideation</h4>
-					<img src="image/letsteach/l2_1.jpg" alt="..." width="100%"><br><br>
+					<p><a href="image/letsteach/l2_1.jpg" title="Skweezee System" data-gallery> <img src="image/letsteach/l2_1.jpg" alt="..." width="100%"> </a></p>
 					<p>The web app was ideated trying to minimize the effort that is required to make notes. And also promote sharing of notes and other teaching material to teach their class. This can minimize time lost in planning to make up for extra time for collaboration. Most of the people in the interview said that they had a slight hesitation in taking regular classes or that certain breaks in classes lead them to discontinue. So in this model since more than one teacher would be taking class, when one is not able to take class other teacher can replace him/ her.</p><br>
 					
 				<h4>Wireframe and UI</h4>
 				
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="5"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="6"></li>
 				  </ol>
 
 				  <!-- Wrapper for slides -->
@@ -180,7 +234,7 @@
 					</div>
 					
 					<div class="item">
-					  <img src="image/letsteach/l4_2.jpg" alt="...">
+					  <a href="image/letsteach/l4_2.jpg" title="Skweezee System" data-gallery> <img src="image/letsteach/l4_2.jpg" alt="..."> </a>
 					  <div class="carousel-caption">
 						...
 					  </div>
@@ -194,7 +248,7 @@
 					</div>
 					
 					<div class="item">
-					  <img src="image/letsteach/l4_4.jpg" alt="...">
+					  <a href="image/letsteach/l4_4.jpg" title="Skweezee System" data-gallery> <img src="image/letsteach/l4_4.jpg" alt="..."> </a>
 					  <div class="carousel-caption">
 						...
 					  </div>
@@ -208,7 +262,7 @@
 					</div>
 					
 					<div class="item">
-					  <img src="image/letsteach/l4_6.jpg" alt="...">
+					  <a href="image/letsteach/l4_6.jpg" title="Skweezee System" data-gallery> <img src="image/letsteach/l4_6.jpg" alt="..."> </a>
 					  <div class="carousel-caption">
 						...
 					  </div>
@@ -223,10 +277,10 @@
 				  </div>
 
 				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				  <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				  <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				  </a>
 				</div>
@@ -257,6 +311,8 @@
 	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
 	<!--
 	<script type="text/javascript">
 

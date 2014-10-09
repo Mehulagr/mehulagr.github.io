@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,11 +41,12 @@
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 				<ul class="dropdown-menu">
+				  <li><a href="inking.html">Inking</a></li>
 				  <li><a href="tui.html">Tangible User Interface</a></li>
-				  <li><a href="skweezee.html">Skweezees</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
 				  <li><a href="letsteach.html">Let's Teach</a></li>
 				  <li><a href="cabage.html">Cabage</a></li>
-				  <li><a href="eventapp.html">Event Application</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="chemicable.html">Chemicable</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
@@ -55,7 +58,42 @@
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
-  
+	
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
     <div class="container" style="padding-left: 5%; padding-right: 5%">
 		<div class="col-sm-6 col-md-4 ">
 			<div class="thumbnail" width="100%" style="padding:0%">
@@ -66,10 +104,13 @@
 					Independent<br><br>
 					<b>Project Duration:</b>
 					August'12 - September '12<br><br>
-					<b>Prototype:</b>
-					<a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank"> Play Store Link </a>
+					<b> <a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank"> Play Store Link </a> </b>
 					</div>
 				</p>
+				<br>
+				<a href="image/cover-05.jpg" data-gallery>
+				<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
+				</a>
 			</div>
 		</div>
 		
@@ -78,82 +119,118 @@
 			  <h1 id="navbar">Navbar</h1>
 			</div>
 			-->
-			<h1><b>Event Guiding Application</b></h1>
+			<span class="project_heading">
+				<h1>Techniche App</h1>
+			</span>
 			<hr>
 			<div class="project_content">
 				<h4>Brief</h4>
+					<p>WH=hile attending a fest, people need different kind of information before fest and during it. While before fest people can easily access fest website and get the information, their information during fest is limited to announcements, word-of-mouth and pre-planned information. They tend to miss out events as they were not aware of it or time or venue of event changed. Thus, we made an app to guide people during a fest.</p>
+					
+				<hr>
+				
+				<h4>Introduction</h4>
 					<p>This was a self initiated project done to get better understanding of design methodology. The research was conducted to cater to needs of varied people coming to Techniche, the technical fest of IIT Guwahati.</p><br>
 					
 				<h4>Secondary Study</h4>
-					<p>We started with going over through all posters, websites, articles and other material of Techniche to identify 10 words that define Techniche and form its core principle and simultaneously did market research for comparative analysis of the applications with similar functionality or objective as our application. The comparative analysis was done for gap and trend analysis.</p><br>
+					<p>We started with going over through all posters, websites, articles and other material of Techniche to identify 10 words that define Techniche and form its core principle and simultaneously did market research for comparative analysis of the applications with similar functionality or objective as our application. The comparative analysis was done for gap and trend analysis.</p>
+					<p><a href="image/eventapp/e1-02.jpg" title="Comparitive Study" data-gallery> <img src="image/eventapp/e1-02.jpg" alt="Comparitive Study" width="100%" style="border: 1px solid #999;"> </a></p><br>
 					
 				<h4>Primary Research</h4>
-					<p>Open ended questionnaire was designed for 3 different categories of people that were the potential users of this App- Stakeholders, Internal users (people living in IITG) and External users (not a part of IITG, who had been part of Techniche earlier or any other technical fest).</p><br>
+					<p>Open ended questionnaire was designed for 3 different categories of people that were the potential users of this App- Stakeholders, Internal users (people living in IITG) and External users (not a part of IITG, who had been part of Techniche earlier or any other technical fest).</p>
+					<p><a href="image/eventapp/e1-01.jpg" title="Interview Questionnaire" data-gallery> <img src="image/eventapp/e1-01.jpg" alt="Interview Questionnaire" width="100%"> </a></p><br>
 					
 				<h4>Persona and Use Case</h4>
-					<p>All these surveys were compiled and analyzed and it formed our basis of Persona of our user. Through we tried to understand the existing system of getting all the info and problems in them.  Persona and Use Cases formed the base of UI design of the application. </p><br>
+					<p>All these surveys were compiled and analyzed and it formed our basis of Persona of our user. Through we tried to understand the existing system of getting all the info and problems in them.  Persona and Use Cases formed the base of UI design of the application. </p>
+					<p>
+						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner">
+							<div class="item active">
+							  <a href="image/eventapp/e2-01.jpg" title="Problems and Needs Identification" data-gallery> <img src="image/eventapp/e2-01.jpg" alt="Problems and Needs Identification"> </a>
+							  <div class="carousel-caption">
+								Problems and Needs Identification
+							  </div>
+							</div>
+							
+							<div class="item">
+							  <a href="image/eventapp/e2-02.jpg" title="External User Information Need" data-gallery> <img src="image/eventapp/e2-02.jpg" alt="External User Information Need"> </a>
+							  <div class="carousel-caption">
+								External User Information Need
+							  </div>
+							</div>
+							
+							<div class="item">
+							  <a href="image/eventapp/e2-03.jpg" title="Present User Task Flow" data-gallery> <img src="image/eventapp/e2-03.jpg" alt="Present User Task Flow"> </a>
+							  <div class="carousel-caption">
+								Present User Task Flow
+							  </div>
+							</div>
+							
+							<div class="item">
+							  <a href="image/eventapp/e2-04.jpg" title="Persona" data-gallery> <img src="image/eventapp/e2-04.jpg" alt="Persona"> </a>
+							  <div class="carousel-caption">
+								Persona
+							  </div>
+							</div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						  </a>
+						</div>
+					</p><br>
 					
-				<h4>Info Architecture</h4>
-					<p>Info Architecture was made using the all the data collected in Secondary Research keeping in mind the needs of users that became evident in Primary Research.</p><br>
+				<h4>Information Architecture</h4>
+					<p>Info Architecture was made using the all the data collected in Secondary Research keeping in mind the needs of users that became evident in Primary Research.</p>
+					<p><a href="image/eventapp/e1-004.jpg" title="Information Architecture" data-gallery> <img src="image/eventapp/e1-004.jpg" alt="Information Architecture" width="100%"> </a></p><br>
 					
 				<h4>Mock Up</h4>
-				Wire-frame and Interface were designed on the based on research.
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-				  </ol>
+					<p>Wire-frame and Interface were designed on the based on research.</p>
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					  </ol>
 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-					  <img src="image/eventapp/e1-01.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+						<div class="item active">
+						  <a href="image/eventapp/e3-01.jpg" title="Wireframe and Visual Mockup" data-gallery> <img src="image/eventapp/e3-01.jpg" alt="Wireframe and Visual Mockup"> </a>
+						  <div class="carousel-caption">
+							Wireframe and Visual Mockup
+						  </div>
+						</div>
+						
+						<div class="item">
+						  <a href="image/eventapp/e3-02.jpg" title="Visual Mockups" data-gallery> <img src="image/eventapp/e3-02.jpg" alt="Visual Mockups"> </a>
+						  <div class="carousel-caption">
+							Visual Mockups
+						  </div>
+						</div>
 					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/eventapp/e1-02.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/eventapp/e1-03.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/eventapp/e1-04.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/eventapp/e1-05.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-				  </div>
 
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div>
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -181,25 +258,9 @@
 	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
-	<!--
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-36060270-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-
-		$('.carousel').carousel({
-		  interval: 2000
-		})
-	</script>
-	-->
-
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
+	<script type="text/javascript" src="docs/blueimp-gallery-fullscreen.js"></script>
 
   </body>
 </html>

@@ -1,21 +1,49 @@
 body {
-  /* min-height: 2000px; */
+	/* min-height: 2000px; */
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #727272;
 }
 
 h1{
 	margin: 0%;
 }
 
-.project_content{
+.project_content {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	font-size: 15px;
+	color: #727272;
+	text-align: justify;
 }
 
-.thumbnail h4{
-	/* font-size: 20px; */
+.thumbnail {
+	font-size: 14px;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #3a3a3a;
+}
+
+.project_heading h1{
+	font-weight: 100; 
+	font-size: 32px
+}
+
+.project_heading h4{
+	font-weight: 300; 
+	color: #727272; 
+	font-size: 18px
+}
+	
 .project_content h4{
-	/* font-size: 20px; */
+	font-weight: 400;
+	text-decoration: underline;
+	color: #3a3a3a;
+	font-size: 24px;
 }
 
 .bsnavbar
@@ -140,4 +168,18 @@ margin-bottom: 19px;
   .bs-footer p {
     margin-bottom: 0;
   }
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

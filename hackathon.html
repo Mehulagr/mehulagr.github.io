@@ -10,7 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+	
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,11 +42,12 @@
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 				<ul class="dropdown-menu">
+				  <li><a href="inking.html">Inking</a></li>
 				  <li><a href="tui.html">Tangible User Interface</a></li>
-				  <li><a href="skweezee.html">Skweezees</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
 				  <li><a href="letsteach.html">Let's Teach</a></li>
 				  <li><a href="cabage.html">Cabage</a></li>
-				  <li><a href="eventapp.html">Event Application</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="chemicable.html">Chemicable</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
@@ -55,6 +59,41 @@
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
+	
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
   
     <div class="container" style="padding-left: 5%; padding-right: 5%">
 		<div class="col-sm-6 col-md-4 ">
@@ -68,61 +107,29 @@
 					24 hours or less<br><br>
 					</div>
 				</p>
+				<br>
+				<a href="image/cover-07.jpg" data-gallery>
+				<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
+				</a>
 			</div>
 		</div>
 		
 		<div class="col-sm-6 col-md-8">
 		
-			<h1><b>Mobile app for Web-opac</b></h1>
+			<span class="project_heading">
+				<h1>Mobile app for Web-opac</h1>
+			</span>
 			<hr>
 			<div class="project_content">
 				<h4>Brief</h4>
-					<p>For every course a list of course book and reference books is provided. And it is a tradition to rush to library to get the book first. This process involves getting the list of books from the intranet and getting that printed. Followed by searching it on computer of the library and getting its location on library. Followed by rushing towards it to get it first. We tried to improve this process along with the process of getting any other book in library by providing mobile app that can be used to access the web-opac, which has pre-loaded data of your course books depending on your roll-no.</p><br>
-					
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-					  <img src="image/hackathon/h1-01.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h1-02.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h1-03.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div>
+					<p>For every course a list of course book and reference books is provided. And it is a tradition to rush to library to get the book first. This process involves getting the list of books from the intranet and getting that printed. Followed by searching it on computer of the library and getting its location on library. Followed by rushing towards it to get it first. We tried to improve this process along with the process of getting any other book in library by providing mobile app that can be used to access the web-opac, which has pre-loaded data of your course books depending on your roll-no.</p>
+					<p><a href="image/hackathon/h1-04.jpg" title="IITG OPAC Mobile App" data-gallery> <img src="image/hackathon/h1-04.jpg" alt="IITG OPAC Mobile App" width="100%"> </a></p><br>
 			</div>
-			
 			<hr>
 			
-			<h1><b>IIT Guwahati Webmail Interface Redesign</b></h1>
+			<span class="project_heading">
+				<h1>IIT Guwahati Webmail Interface Redesign</h1>
+			</span>
 			<hr>
 			<div class="project_content">
 				<h4>Brief</h4>
@@ -131,99 +138,69 @@
 					2. Visuals. Although one can customize its colors but again this feature is not upfront and also basic theme itself is not nice.<br>
 					3. Titles or labels of some options are not intuitive.<br>
 					4. Grouping of content.   <br><br>
-					Therefore, we studied other e-mail systems UI like Gmail and Yahoo. We decided on content that is to be displayed on main page. Then we decided how it would be shown – grouping and placement of buttons etc. Finally we designed mock-ups for each individual page.  We planned for two colour themes initially – Dark and Light.</p><br>
-					
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				  </ol>
+					Therefore, we studied other e-mail systems UI like Gmail and Yahoo. We decided on content that is to be displayed on main page. Then we decided how it would be shown – grouping and placement of buttons etc. Finally we designed mock-ups for each individual page.  We planned for two colour themes initially – Dark and Light.</p>
+					<p>
+					<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+						</ol>
 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-					  <img src="image/hackathon/h2-01.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h2-02.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h2-03.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h2-04.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-				  </div>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<a href="image/hackathon/h2-05.jpg" title="IITG Webmail Redesign" data-gallery> <img src="image/hackathon/h2-05.jpg" alt="IITG Webmail Redesign"> </a>
+								<div class="carousel-caption">
+								IITG Webmail Redesign
+								</div>
+							</div>
 
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div>
+							<div class="item">
+								<a href="image/hackathon/h2-01.jpg" title="Present Webmail Design" data-gallery> <img src="image/hackathon/h2-01.jpg" alt="Present Webmail Design"> </a>
+								<div class="carousel-caption">
+								Present Webmail Design
+								</div>
+							</div>
+							
+							<div class="item">
+								<a href="image/hackathon/h2-02.jpg" title="Webmail Redesign: Inbox" data-gallery> <img src="image/hackathon/h2-02.jpg" alt="Webmail Redesign: Inbox"> </a>
+								<div class="carousel-caption">
+								Webmail Redesign: Inbox
+								</div>
+							</div>
+							
+							<div class="item">
+								<a href="image/hackathon/h2-03.jpg" title="Webmail Redesign: Compose" data-gallery> <img src="image/hackathon/h2-03.jpg" alt="Webmail Redesign: Compose"> </a>
+								<div class="carousel-caption">
+								Webmail Redesign: Compose
+								</div>
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					</p><br>
 			</div>
 			
 			<hr>
 			
-			<h1><b>IIT Guwahati Hackathon</b></h1>
+			<span class="project_heading">
+				<h1>IIT Guwahati Hackathon</h1>
+			</span>
 			<hr>
 			<div class="project_content">
 				<h4>Brief</h4>
-					<p>This is a work done by us for overnight Hackothlon in Kriti, inter- hostel technical competition of IIT Guwahati. Problem statement was to develop an app for Akash tablet and IITG community as target user group. We decided to make an utility application which would notify user about all events happening in IIT Guwahati. We named it ‘ghapp’.  User can add any event to his favorite and set alarm for it. By the morning, we managed to develop its mock-ups but couldn’t develop it. We came 3rd in this competition.</p><br>
-					
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-					  <img src="image/hackathon/h3-01.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-					
-					<div class="item">
-					  <img src="image/hackathon/h3-02.jpg" alt="...">
-					  <div class="carousel-caption">
-						...
-					  </div>
-					</div>
-
-				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				  </a>
-				</div>
+					<p>This is a work done by us for overnight Hackothlon in Kriti, inter- hostel technical competition of IIT Guwahati. Problem statement was to develop an app for Akash tablet and IITG community as target user group. We decided to make an utility application which would notify user about all events happening in IIT Guwahati. We named it ‘ghapp’.  User can add any event to his favorite and set alarm for it. By the morning, we managed to develop its mock-ups but couldn’t develop it. We came 3rd in this competition.</p>
+					<p><a href="image/hackathon/h3-03.jpg" title="G-Happ Mobile App" data-gallery> <img src="image/hackathon/h3-03.jpg" alt="G-Happ Mobile App" width="100%"> </a></p><br>
 			</div>
 		</div>
 	</div>
@@ -251,6 +228,8 @@
 	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
 	<!--
 	<script type="text/javascript">
 
