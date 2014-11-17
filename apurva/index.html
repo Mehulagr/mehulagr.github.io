@@ -93,7 +93,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal" onclick="check();" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal" data-toggle="modal" class="grid_box portfolio-link" id="project1">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal" data-toggle="modal" class="grid_box portfolio-link" id="project2">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal" data-toggle="modal" class="grid_box portfolio-link" id="project3">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -316,9 +316,17 @@
     <script src="js/agency.js"></script>
 	
 	<script>
-		function check(){
-			$('#modal-body1').load('test.html #target');
-		}
+		$('.grid_box').on('click', function(){
+			var file_name=$(this).attr('id')+'.html';
+
+			$('#modal-body1').load(file_name, function( response, status, xhr ) {
+				if ( status == "error" ) {
+					var msg = "<div style=\" color:red; text-align:center;\">Page not available. Please let me know if this happens";
+					$('#modal-body1').html(msg);
+				}
+			}); 
+		});
+
 	</script>
 
 </body>
