@@ -4,6 +4,30 @@ body {
 	font-weight: 400;
 	font-size: 15px;
 	color: #727272;
+	background: #ffffff;
+}
+
+.navbar-new{
+	background-color: #f0f0f0;
+	border: none; 
+	color: #727272;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #727272;
+}
+
+.navbar-default .navbar-nav>.dropdown>a .caret {
+border-top-color: #727272;
+border-bottom-color: #727272;
+}
+
+.jumbotron-main-page{
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+	color: #727272;
 }
 
 h1{
