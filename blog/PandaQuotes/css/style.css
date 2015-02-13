@@ -1,0 +1,53 @@
+@font-face {
+    font-family: font2;
+    src: url(../fonts/font2.ttf);
+}
+
+html, body {
+	width: 100% !important; 
+	height: 100%; 
+}
+
+body {
+	-webkit-text-size-adjust:none !important; 
+	-ms-text-size-adjust:none !important; 
+	-moz-text-size-adjust:none !important; 
+	margin:0; 
+	padding:0; 
+	border: none;
+	background: rgb(199, 173, 0);
+	background-image: url('../images/background1.jpg'); 
+	background-size: cover;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0px;
+	left: 10px;
+	z-index: 999;
+}
+
+.nav {
+	background-color: #ffffff;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar-brand {
+	float: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background: transparent;
+}
+
+.carousel-inner .item {
+	font-family: font2;
+	font-size: 32pt;
+}
+
+.carousel-inner  {
+	width: 80%;
+ }
