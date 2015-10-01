@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -19,11 +19,29 @@
     <![endif]-->
 
     <!-- Place anything custom after this. -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-57952563-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
+
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -95,41 +113,63 @@
 		</div>
 	</div>
 	
-    <div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-05.jpg" width="100%">
-						<div style="margin:2%">
-						<b>Project Guide:</b>
-						Independent<br><br>
-						<b>Project Duration:</b>
-						August'12 - September '12<br><br>
-						<b> <a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank"> Play Store Link </a> </b>
-						</div>
-					</p>
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-05.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Techniche Event App
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
 					<br>
-					<a href="image/cover-05.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
+				<small> Event Guiding Application for a Technical Fest, Techniche </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Aug'12 - Sep'12</p></li>
+						  <li><p>Group of 4</p></li>
+						  <li><p style="border-right: none;">Side Project</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank">Android</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
 				</div>
 			</div>
-			
-			<div class="col-sm-6 col-md-8">
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Navbar</h1>
-				</div>
-				-->
-				<span class="project_heading">
-					<h1>Techniche App</h1>
-				</span>
-				<hr>
-				<div class="project_content">
-					<h4>Brief</h4>
-						<p>WH=hile attending a fest, people need different kind of information before fest and during it. While before fest people can easily access fest website and get the information, their information during fest is limited to announcements, word-of-mouth and pre-planned information. They tend to miss out events as they were not aware of it or time or venue of event changed. Thus, we made an app to guide people during a fest.</p>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
 						
 					<hr>
+					
+					<h4>Brief</h4>
+					<p>While attending a fest, people need different kind of information before fest and during it. While before fest people can easily access fest website and get the information, their information during fest is limited to announcements, word-of-mouth and pre-planned information. They tend to miss out events as they were not aware of it or time or venue of event changed. Thus, we made an app to guide people during a fest.</p><br>
 					
 					<h4>Introduction</h4>
 						<p>This was a self initiated project done to get better understanding of design methodology. The research was conducted to cater to needs of varied people coming to Techniche, the technical fest of IIT Guwahati.</p><br>
@@ -233,7 +273,19 @@
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						  </a>
 						</div>
+					
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -244,8 +296,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
@@ -263,17 +316,6 @@
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
 	
 	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
-	<script type="text/javascript" src="docs/blueimp-gallery-fullscreen.js"></script>
 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-57952563-1', 'auto');
-	ga('send', 'pageview');
-
-	</script>
   </body>
 </html>

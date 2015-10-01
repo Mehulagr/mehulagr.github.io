@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -29,12 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
 
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -106,44 +113,65 @@
 		</div>
 	</div>
 	
-    <div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-04.jpg" width="100%">
-						<div style="margin:2%">
-						<b>Project Guide:</b>
-						Manoj Majhi, Asst. Prof., Department of Design, IIT Guwahati<br><br>
-						<b>Project Duration:</b>
-						July'12 - November '12<br><br>
-						<b>Publication:</b>
-						<a href="http://www.designforall.in/finaljournal.pdf#25"  target="_blank">Aditi Padhi, Apurva Gupta, Mehul Agrawal & Manoj Majhi. “Translating Cab Sharing to Information System-Technical report on design intervention”, published in Design For All, 2013, pp. 25-30.</a>
-						</div>
-					</p>
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-04.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Cabage
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
 					<br>
-					<a href="image/cover-04.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
+				<small> Translating cab-sharing to information system </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Jul'12 - Nov'12</p></li>
+						  <li><p>Group of 3</p></li>
+						  <li><p style="border-right: none;">Guide: Asst. Prof. Manoj Majhi</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="http://www.designforall.in/finaljournal.pdf#25" target="_blank">Research Paper</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
 				</div>
 			</div>
-			
-			<div class="col-sm-6 col-md-8">
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Navbar</h1>
-				</div>
-				-->
-				<span class="project_heading">
-					<h1>Cabage</h1>
-					<h4>Translating cab-sharing to information system</h4>
-				</span>
-				<hr>
-				<div class="project_content">
-					<h4>Brief</h4>
-						<p>We travel every day to our workplaces, markets, airports etc. The same route is traversed by hundreds at the same time. Similarly, during vacations, in general, in all the colleges, students travel from the campus to airport/railway station. Most of them book cabs. There are many people who travel the same destination starting from the same place yet, since we are unknown to that fact we lose a chance to share the cab and save some money. We surveyed in the campus, and we found this increases during festive holidays where only a handful of us travel to airports or railway stations. So we planned to come up with a solution that could help college student (and others) to effectively form pools to share cab which could save money and fuel as well as bring home the idea of green travelling.</p>
-						<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/sGD8PtVIALc" frameborder="0" allowfullscreen></iframe></center></div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
 					
+					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/sGD8PtVIALc" frameborder="0" allowfullscreen></iframe></center></div>
+						
 					<hr>
+					
+					<h4>Brief</h4>
+					<p>We travel every day to our workplaces, markets, airports etc. The same route is traversed by hundreds at the same time. Similarly, during vacations, in general, in all the colleges, students travel from the campus to airport/railway station. Most of them book cabs. There are many people who travel the same destination starting from the same place yet, since we are unknown to that fact we lose a chance to share the cab and save some money. We surveyed in the campus, and we found this increases during festive holidays where only a handful of us travel to airports or railway stations. So we planned to come up with a solution that could help college student (and others) to effectively form pools to share cab which could save money and fuel as well as bring home the idea of green travelling.</p><br>
 					
 					<h4>Introduction</h4>
 						<p>The project was taken up to solve the problems faced by the fraternity of students and other members in the campus of Indian Institute of Technology, Guwahati, while travelling to and fro from the campus to airport/railway station.</p>
@@ -226,7 +254,19 @@
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						  </a>
 						</div>
+					
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -237,8 +277,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
@@ -254,6 +295,8 @@
 	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
 
   </body>
 </html>

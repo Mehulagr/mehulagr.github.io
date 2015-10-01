@@ -7,13 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
-	
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,11 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
+
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -105,46 +112,67 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-07.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Google Developer Hackathon
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
+					<br>
+				<small> Event Guiding Application for a Technical Fest, Techniche </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>24 hours or less</p></li>
+						  <li><p style="border-right: none;">Side Projects</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<!--<ul class="nav navbar-nav navbar-right">
+						  <li><a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank">Android</a></li>
+						</ul> -->
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
   
     <div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-07.jpg" width="100%">
-						<div style="margin:2%">
-						<b>Done as a part of:</b>
-						Hackathon, Google Developer Group<br><br>
-						<b>Duration:</b>
-						24 hours or less<br><br>
-						</div>
-					</p>
-					<br>
-					<a href="image/cover-07.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-8">
-			
-				<span class="project_heading">
-					<h1>Mobile app for Web-opac</h1>
-				</span>
-				<hr>
-				<div class="project_content">
-					<h4>Brief</h4>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
+						
+					<hr>
+					
+					<h4>Mobile app for Web-opac</h4>
 						<p>For every course a list of course book and reference books is provided. And it is a tradition to rush to library to get the book first. This process involves getting the list of books from the intranet and getting that printed. Followed by searching it on computer of the library and getting its location on library. Followed by rushing towards it to get it first. We tried to improve this process along with the process of getting any other book in library by providing mobile app that can be used to access the web-opac, which has pre-loaded data of your course books depending on your roll-no.</p>
 						<p><a href="image/hackathon/h1-04.jpg" title="IITG OPAC Mobile App" data-gallery> <img src="image/hackathon/h1-04.jpg" alt="IITG OPAC Mobile App" width="100%"> </a></p><br>
-				</div>
 				<hr>
 				
-				<span class="project_heading">
-					<h1>IIT Guwahati Webmail Interface Redesign</h1>
-				</span>
-				<hr>
-				<div class="project_content">
-					<h4>Brief</h4>
+					<h4>IIT Guwahati Webmail Interface Redesign</h4>
 						<p>While working with a computer science student of IIT Guwahati for Chrome Extension which would imply new user-interface on IITG webmail on adding it to your Google chrome, we did UX design part of it. Problems which we found in existing UI were: -<br>
 						1. Important features which are supposed to be frequently used were nearly hidden in different options in fact some students were unaware about some features that they are there in webmail.<br>
 						2. Visuals. Although one can customize its colors but again this feature is not upfront and also basic theme itself is not nice.<br>
@@ -201,19 +229,25 @@
 							</a>
 						</div>
 						</p><br>
-				</div>
 				
 				<hr>
-				
-				<span class="project_heading">
-					<h1>IIT Guwahati Hackathon</h1>
-				</span>
-				<hr>
-				<div class="project_content">
-					<h4>Brief</h4>
+
+					<h4>IIT Guwahati Hackathon</h4>
+					
 						<p>This is a work done by us for overnight Hackothlon in Kriti, inter- hostel technical competition of IIT Guwahati. Problem statement was to develop an app for Akash tablet and IITG community as target user group. We decided to make an utility application which would notify user about all events happening in IIT Guwahati. We named it ‘ghapp’.  User can add any event to his favorite and set alarm for it. By the morning, we managed to develop its mock-ups but couldn’t develop it. We came 3rd in this competition.</p>
 						<p><a href="image/hackathon/h3-03.jpg" title="G-Happ Mobile App" data-gallery> <img src="image/hackathon/h3-03.jpg" alt="G-Happ Mobile App" width="100%"> </a></p><br>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -224,8 +258,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 

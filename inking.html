@@ -7,14 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,12 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
 
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -107,47 +112,74 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/cover-09.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Inking
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
+					<br>
+				<small> Pen Gestures for augmenting digital writing experience and capabilities </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Feb'14 - June'14</p></li>
+						  <li><p>Group of 4</p></li>
+						  <li><p style="border-right: none;">For: Microsoft</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<!--
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="#" target="_blank">Blog</a></li>
+						  <li><a href="#" target="_blank">Product Video</a></li>
+						</ul>
+						-->
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
   
     <div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-09.jpg" width="100%">
-						<div style="margin:2%">
-						<b>Project Guide:</b>
-						Independent<br><br>
-						<b>Project Duration:</b>
-						Feb '14 - July '14<br><br>
-						<b>Video:</b>
-						<a href="https://www.youtube.com/watch?v=ZMkECFHQibU" target="_blank">Video Prototype</a>
-						</div>
-					</p>
-					<br>
-					<a href="image/cover-09.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-8">
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Navbar</h1>
-				</div>
-				-->
-				
-				<span class="project_heading">
-					<h1>Inking</h1>
-					<h4>Pen Gestures for augmenting digital writing experience and capabilities</h4>
-				</span>
-				<hr>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
-					<h4>Brief</h4>
-						<p>Although the existing inking and notetaking apps for tablet like evernote, one note etc. powerfull, but they do not harness all the capabilities of digital medium. Features in these app are limited to most common functions like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features in a note taking app. In the app we propose, these wide array of functions have common umbrella of accessing them i.e. pen based gestures/ keywords. </p>
-						<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/ASaXe4QybIA" frameborder="0" allowfullscreen></iframe></center></div>
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
 					
+					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/ASaXe4QybIA" frameborder="0" allowfullscreen></iframe></center></div>
+						
 					<hr>
 					
+					<h4>Brief</h4>
+					<p>Although the existing inking and notetaking apps for tablet like evernote, one note etc. powerfull, but they do not harness all the capabilities of digital medium. Features in these app are limited to most common functions like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features in a note taking app. In the app we propose, these wide array of functions have common umbrella of accessing them i.e. pen based gestures/ keywords.</p><br>
+					
+					<h4>Research</h4>
+					<p>Uber already offers ride to a million users per day. Uber wants to achieve the higher goal of replacing private car ownership for which they need to create a massive peer-to-peer that people can trust. This trust comes down to rooting out of problematic riders and drivers. Additionally, they have to ensure that the driver provide a premium car-fleet like service to its riders. A lot of this happens through its rating system which has flaws such as bias and subjectivity.</p>
+					<p>Primary and Secondary Research were conducted to understand the existing rating system, its problems, its alternatives, users problem with that etc. The common problem was consistent in primary and secondary research. Statement by one of the driver reflects the depth of the problem-</p><br>
+				
 					<h4>Introduction</h4>
 						<p>Design an app for touch devices that uses Inking (Pen based input on digital canvas) as the primary way of input and creation.</p>
 						<p><a href="image/inking/i1.jpg" title="Brief" data-gallery> <img src="image/inking/i1.jpg" alt="Brief" width="100%" /> </a></p><br>
@@ -293,8 +325,21 @@
 						<p>How many additional features does evernote provide as compared to paper? The current app like evernote, one note etc. have only few features like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features using a note taking app. These functions have common umbrella of accessing them i.e. pen based gestures/ keywords. A prototype with animation and gestures was designed using powerpoint.</p>
 						<p><a href="image/inking/i10.jpg" title="Prototype" data-gallery><img src="image/inking/i10.jpg" alt="Prototype" width="100%"></a></p>
 						<p>Novelty of the app lies in the way user interacts with the system to perform common tasks. The gestures are adopted from the daily behavior of user while taking notes. </p><br>
-
+						
+					<h4>Final Design</h4>
+						<p>The experiment was within-subject design with 10 participants using both the systems. The users evaluated both the systems on SUS scale and Attrakdiff questionnaire. They were asked to give out their preference for each system. The SUS score for Visual Feedback system is 72 whereas SUS score for Shape Changing System is 66.5. </p>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -305,8 +350,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
@@ -324,6 +370,6 @@
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
 	
 	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
-	
+
   </body>
 </html>

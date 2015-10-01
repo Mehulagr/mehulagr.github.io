@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -29,12 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
 
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -105,45 +112,62 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-01.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Tangible User Interfaces
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
+					<br>
+				<small> Evaluating Shape-Change as a Feedback Modality for Tangible User Interface </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Jul'13 - Jul'14</p></li>
+						  <li><p>Individual Intern</p></li>
+						  <li><p style="border-right: none;">Asst. Prof. Keyur Sorathia</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="https://medium.com/interaction-modalities/" target="_blank">Blog</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
   
     <div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-01.jpg" width="100%">
-						<div style="margin:2%">
-						<b>Project Guide:</b>
-						Keyur Sorathia, Asst. Prof., Department of Design, IIT Guwahati<br><br>
-						<b>Project Duration:</b>
-						July '13 - July '14<br><br>
-						<b><a href="https://medium.com/interaction-modalities/" target="_blank">Project Blog</a></b>
-						<br><br>
-						<b><a href="https://www.youtube.com/watch?v=qaNGmDv_wZE" target="_blank">Video Prototype</a></b>
-						</div>
-					</p>
-					<br>
-					<a href="image/cover-01.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-8">
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Navbar</h1>
-				</div>
-				-->
-				<span class="project_heading">
-					<h1>Tangible User Interfaces</h1>
-					<h4>Evaluating Shape-Change as a Feedback Modality for Tangible User Interface</h4>
-				</span>
-				<hr>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
-					<h4>Brief</h4>
-						<p>We have come a long way from command line interfaces to madern tablet based interface. Even Tangible User Interface have started increasing. But feedback and output in these interfaces is still limited to screen based visual modality and audio modality. Here we have prototypedand compared two interface, one with the conventional visual feedback using LED and other with the shape changing based feedback.</p>
-						<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/qaNGmDv_wZE" frameborder="0" allowfullscreen></iframe></center></div>
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
 					
+					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/qaNGmDv_wZE" frameborder="0" allowfullscreen></iframe></center></div>
+						
 					<hr>
 					
 					<h4>Introduction</h4>
@@ -209,7 +233,19 @@
 					<h4>Conclusion</h4>
 						<p>Tangible interfaces couple the physical world with the digital information. Thus, change in material properties become a natural choice of interaction for such interfaces. Shape changing feedback system was found to be attracting attention of the user by the virtue of its movement and so they have potential to be more effective in catch immediate attraction of user particularly over the distance. The results also suggest that shape change as a feedback fared better to convey system status and ordinal information whereas non-screen visual (illumination based) fared better for quantitative information.</p><br>
 					
+					<br>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -220,8 +256,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 

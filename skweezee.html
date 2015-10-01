@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -29,12 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
 
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -105,49 +112,67 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-02.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Skweezee-mote
+				<a href="image/cover-01.jpg" data-gallery>
+					<img src="image/assets/slides.png" width="50px">
+				</a>
+					<br>
+				<small> A squeeze-gesture-based tangible product design for a television remote </small> 
+			</h3>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>May'13 - Jul'13</p></li>
+						  <li><p>Individual Intern</p></li>
+						  <li><p style="border-right: none;">Prof. Luc Geurts and Prof. Vero Vanden Abeele</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="http://skweezee.wordpress.com/" target="_blank">Blog</a></li>
+						  <li><a href="http://www.slideshare.net/MehulAgarwal/skweezee" target="_blank">Presentation</a></li>
+						  <li><a href="http://link.springer.com/chapter/10.1007/978-81-322-2229-3_35#page-1" target="_blank">Paper</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
   
     <div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 ">
-				<div class="thumbnail" width="100%" style="padding:0%">
-					<p>
-						<img src="image/cover-02.jpg" width="100%">
-						<div style="margin:2%">
-						<!--
-						<h4>Skweezees: Soft Objects that Sense their Shape Shifting</h4> -->
-						<b>Project Guide:</b>
-						Prof. Luc Geurts and Prof. Vero Vanden Abeele, GROUPT - Leuven Engineering College, KU Leuven, Belgium<br><br>
-						<b>Project Duration:</b>
-						May '13 - July '13<br><br>
-						<b>Publication:</b>
-						<a href="content/2015_icord_skweezee.pdf"  target="_blank">Mehul Agrawal, Vero Vanden Abeele, Karen Vanderlocck and Luc Geurts. "Skweezee-mote: A case-study of a gesture-based tangible product design for a television remote control", in international Conference on Research into Design' 15 (ICORD 2015), Bangalore, India. (accepted)</a><br><br>
-						<b><a href="http://skweezee.wordpress.com/" target="_blank">Project Blog</a></b><br><br>
-						<b><a href="http://www.slideshare.net/MehulAgarwal/skweezee" target="_blank"> Final Presentation</a></b>
-						</div>
-					</p>
-					<br>
-					<a href="image/cover-02.jpg" data-gallery>
-					<button type="button" class="btn btn-default" style="width:100%; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" >Slide Show</button>
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 col-md-8" >
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Navbar</h1>
-				</div>
-				-->
-				<span class="project_heading">
-					<h1>Skweezee-mote</h1>
-					<h4>A squeeze-gesture-based tangible product design for a television remote</h4>
-				</span>
-				<hr>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
-					<h4>Brief</h4>
-						<p>Skweezee-mote a squeeze gesture based cushion remote that is more suitable to comfortable enviroment of your drawing room as compared to hard design of existing remote designs.</p>
-					
+					<p class="intro_para">Problem statement, process and solution in brief </p> 
+					<p> <b>My Role:</b> Blah Blah</p><br>
+						
 					<hr>
 					
+					<h4>Brief</h4>
+						<p>Skweezee-mote a squeeze gesture based cushion remote that is more suitable to comfortable enviroment of your drawing room as compared to hard design of existing remote designs.</p><br>
+						
 					<h4>Introduction</h4>
 						<p>Skweezees are soft objects, filled with conductive padding that can be deformed or squeezed by applying pressure. The electrodes sense the shape shifting of the conductive filling by measuring the changing resistance between every possible pair of electrodes. Moreover, Skweezees can be programmed to recognize specific shape deformations; users can record their own squeeze gestures and these gestures are afterwards distinguished. </p>
 						<p><b>Problem statement</b> was to use Skweezee system to design a tangible product.</p>
@@ -189,7 +214,19 @@
 						<p><a href="image/skweezee/s7.jpg" title="Prototype of cushion remote" data-gallery><img src="image/skweezee/s7.jpg" width="100%"></a></p>
 						<p>Conductive Cotton, Conductive Thread and Conductive Tape were used to make the prototype. And Processing was used to code the prototype.</p><br>
 					
+					<br>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="#"> <- Previous project </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="#"> Next project -> </a>
 			</div>
 		</div>
 	</div>
@@ -200,8 +237,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
@@ -219,5 +257,6 @@
 	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
 	
 	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
+
   </body>
 </html>

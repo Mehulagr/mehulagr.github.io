@@ -7,38 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/layout.css">
 	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
 	
-	<style>
-		body {
-			background: #ffffff;
-		}
-		
-		.thumbnail {
-			border: 1px solid #ebebeb;
-			box-shadow: 3px 3px 3px #ebebeb;
-			font-weight: 400;
-			font-size: 16px;
-		}
-		
-		.thumbnail h4{
-			line-height: 1.25;
-		}
-		
-		.thumbnail h4 b{
-			color: #0072BB;
-		}
-		
-		.badge {
-			font-weight: normal;
-			color: #808080;
-			background-color: #e9e9e9;
-		}
-	</style>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,8 +34,8 @@
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -87,27 +62,55 @@
 				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
 				</ul>
 			  </li>
-			  <li><a href="publication.html">Publications</a></li>
-			  <li><a href="content/mehul_agrawal.pdf" target="_blank" >Resume</a></li>
-			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="#resume">Resume</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
   
-	<div class="jumbotron" style="background: url(image/my.jpg)  no-repeat center center fixed, rgb(255,0,255); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75); ">
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover.jpg) center; background-size:cover; margin: 0px; text-align: center; ">
 		<div class="container">
-			<h1 style="font-size:32px; line-height: 1.5"><font color="#ffffff">Hey there!</h1>
-			<p> <font size="4pt"> I'm Mehul Agrawal, a UX Designer with a profound interest in the areas of Tangible User Interfaces and Design for Education. I acquired my bachelor's degree from DOD, IIT Guwahati after 4 fun-filled years of exploration in the deep waters of Design. I love to fiddle with code and I'd like to think it gives me the power to bring some of my designs to life, while also offering me with a completely different perspective on problems. I draw immense pleasure from tinkering, building and making things work and can be generally seen wielding a camera in one hand and a ping-pong paddle in the other.</font></font></p>
+			<div class="col-md-12" style="text-align: center;">
+				<h2 style="margin:0px; color: #ffffff;"> Kick ass User-Experience Designer and Researcher <br><small style="color: #0097A7;">with tinge of developer and ui designer</small> </h2>
+			</div>
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+	<div class="container" style="padding-top: 30px;">
+	
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter="ux ui tangible proto">All</span></li>
+			<li><span class="filter" data-filter="ux">User Experience</span></li>
+			<li><span class="filter" data-filter="ui">User Interface</span></li>
+			<li><span class="filter" data-filter="tangible">Tangible</span></li>
+			<li><span class="filter" data-filter="proto">Protyping</span></li>
+		</ul>
+
+		<div class="row" id="portfoliolist" id="project">
+			<div class="portfolio ux proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
+					<a href="uber.html">
+						<p>
+							<img src="image/cover-10.jpg" width="100%">
+							<div style="margin:2%">
+							<h4><b>Rating System 2.0</b> <br><small>Re-designing Uber's rating system for a thoughtful feedback</h4>
+							<hr style="margin-top: 10px; margin-bottom: 10px;"> </a>
+							<span class="badge">User Study</span>
+							<span class="badge">UX</span> </small>
+							</div>
+						</p>
+				</div>
+			</div>
+			
+			<div class="portfolio ux proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="inking.html">
 						<p>
 							<img src="image/cover-09.jpg" width="100%">
@@ -122,8 +125,8 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio tangible proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="tui.html">
 						<p>
 							<img src="image/cover-01.jpg" width="100%">
@@ -138,10 +141,8 @@
 				</div>
 			</div>
 			
-			<div class="visible-sm clearfix"> </div>
-			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio tangible proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="skweezee.html">
 						<p>
 							<img src="image/cover-02.jpg" width="100%">
@@ -156,10 +157,8 @@
 				</div>
 			</div>
 			
-			<div class="visible-md clearfix"> </div>
-			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio tangible proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="chemicable.html">
 						<p>
 							<img src="image/cover-06.jpg" width="100%">
@@ -175,10 +174,8 @@
 				</div>
 			</div>
 			
-			<div class="visible-sm visible-lg clearfix"> </div>
-			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio ux ui col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="letsteach.html">
 						<p>
 							<img src="image/cover-03.jpg" width="100%">
@@ -193,8 +190,8 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio ux ui proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="cabage.html">
 						<p>
 							<img src="image/cover-04.jpg" width="100%">
@@ -209,10 +206,8 @@
 				</div>
 			</div>
 			
-			<div class="clearfix visible-md visible-sm "> </div>
-			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio ux ui proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="eventapp.html">
 						<p>
 							<img src="image/cover-05.jpg" width="100%">
@@ -227,8 +222,8 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio ui proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="hackathon.html">
 						<p>
 							<img src="image/cover-07.jpg" width="100%">
@@ -242,10 +237,8 @@
 				</div>
 			</div>
 			
-			<div class="visible-sm visible-lg clearfix"> </div>
-			
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail" width="100%" style="padding:0%">
+			<div class="portfolio ux ui proto col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail portfolio-wrapper" width="100%" style="padding:0%">
 					<a href="ozchi.html">
 						<p>
 							<img src="image/cover-08.jpg" width="100%">
@@ -260,6 +253,103 @@
 			</div>
 			
 		</div>
+		
+		<div class="clearfix" id="resume"></div>
+		
+		<hr>
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<h2> Resume <small> [<a href="content/Mehul_Agrawal_Resume.pdf"> Download </a>] </small></h2>
+			</div>
+			
+			<div class="col-sm-6">
+				<h3> Work Experience </h3>
+				<p> <b>Associate Instructor - Indiana University (Aug’15 - Present)</b> <br> Associate instructor for undergrad course HCI/ Interaction Design </p>
+				<p> <b>Associate - Cognizant (July’14 - May’15)</b> <br> Applied user-centered design to create more efficient and user friendly products
+for internal team of cognizant. </p>
+				<p> <b>Industry Collaboration - Microsoft (Feb - July’14)</b> <br> Design a tablet application to enhance the Inking experience for tablets by
+fostering improved content creation and management. </p>
+				<p style="margin-bottom: 30px"> <b>Visiting Scholar - KU Leuven, Belgium (May - July’13)</b> <br> Employed User Centered Methodology to conceptualize and prototype a
+user-friendly product based on Skweezee technology. </p>
+			</div>
+			
+			<div class="col-sm-6">
+				<h3> Education </h3>
+				<p>	<b> Indiana University (2017 - expected) </b> <br> MS-HCI/d, School of Informatics and Computing </p>
+				<p> <b>	Indian Institute of Technology, (IIT) Guwahati, India (2014) </b> <br> B.Des. Department of Design </p> <br>
+				
+				<h3> Skill </h3>
+				<p>	<b> Software Knowledge </b> <br> Adobe Illustrator, Adobe Photoshop, Adobe Dreamweaver, Balsamiq Mockups, Google Sketch up, Just in Mind, Sketch and Flash </p>
+				<p>	<b> Programming Knowledge </b> <br> HTML/CSS, Processing [Java based], Python/C, Arduino and PHP </p> <br>
+			</div>
+		</div>
+		
+		<div class="clearfix"></div>
+		<hr>
+		
+		<div class="row" id="about">
+			<div class="col-sm-12">
+				<h2> About </h2>
+			</div>
+			<br><br>
+			<div class="col-sm-3">
+				<p>
+					<img src="image/my2.jpg" width="100%">
+				</p>
+				<!--
+				<p>	
+					<a href="mailto:agrawal.mehul92@gmail.com" target="_blank"> <img src="image/assets/email.png" class="col-xs-4" width="100%" alt="agrawal.mehul92@gmail.com"> </a>
+					<a href="https://www.linkedin.com/in/mehulagr" target="_blank"> <img src="image/assets/linkedin.png" class="col-xs-4" width="100%"> </a>
+					<a href="https://medium.com/@mehul_agr" target="_blank"> <img src="image/assets/medium.png" class="col-xs-4" width="100%"> </a>
+				</p>
+				-->
+			</div>
+			<div class="col-sm-9">
+				<p>Hola! </p>
+				<p>I am UX designer and researcher specializing in interaction design and rapid prototyping for emerging technologies. Currently a first year MS-HCID student at IUB with over 5 years of experience in design. From my explorations, I have learnt that the secret sauce for a good design solution is to marry right technology with right users with an hint of pleasure and delight. Its not only  important to integrate users perspective into design, but also of other stakeholders like developers and managers. </p> 
+				<p>I love exploring and routinely study different applications and their design choices. Playing with code or a good action thriller keep me awake late nights and design discussions leave me intrigued.  I appreciate simplicity in work, life and definitely my cup of coffee. </p>
+				</p><br>
+				<!--
+				<p style="text-align:center">	
+					<a href="mailto:agrawal.mehul92@gmail.com" target="_blank"> <img src="image/assets/email.png" width="25px" alt="agrawal.mehul92@gmail.com"> agrawal.mehul92@gmail.com </a> | 
+					<a href="#" target="_blank"> <img src="image/assets/medium.png" width="25px"> +1-812-361-2541 </a> |
+					<a href="https://www.linkedin.com/in/mehulagr"  target="_blank"> <img src="image/assets/linkedin.png" width="25px"> https://www.linkedin.com/in/mehulagr </a>
+				</p>
+				-->
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="row hidden-xs" id="contact">
+			<div class="col-xs-4" style="text-align:center">
+				<a href="mailto:agrawal.mehul92@gmail.com" target="_blank"> 
+					<img src="image/assets/email.png" width="50px" alt="agrawal.mehul92@gmail.com"> 
+				</a><br><br>
+				agrawal.mehul92@gmail.com 
+			</div>
+			
+			<div class="col-xs-4" style="text-align:center">
+					<img src="image/assets/phone.png" width="50px"> <br><br>
+					+1-812-361-2541 
+			</div>
+			<div class="col-xs-4" style="text-align:center">
+				<a href="https://www.linkedin.com/in/mehulagr"  target="_blank"> 
+					<img src="image/assets/linkedin.png" width="50px">
+				</a><br><br>
+				https://www.linkedin.com/in/mehulagr
+			</div>
+		</div>
+		
+		
+		<div class="row visible-xs-block" id="contact">
+			<div class="col-sm-12">
+				<a href="mailto:agrawal.mehul92@gmail.com" target="_blank"> <img src="image/assets/email.png" width="25px" alt="agrawal.mehul92@gmail.com"> agrawal.mehul92@gmail.com </a> <br><br>
+				<img src="image/assets/phone.png" width="25px"> +1-812-361-2541 <br><br>
+				<a href="https://www.linkedin.com/in/mehulagr"  target="_blank"> <img src="image/assets/linkedin.png" width="25px"> https://www.linkedin.com/in/mehulagr </a>
+			</div>
+		</div>
     </div>
 	
 	
@@ -267,8 +357,9 @@
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-xs-4">Mehul Agrawal</p>
+			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
@@ -276,7 +367,7 @@
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Placed at the end of the document so the pages load faster  -->
     <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="docs/bootstrap.js"></script>
 <script type="text/javascript" src="docs/application.js"></script>
@@ -284,6 +375,56 @@
 <script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 <script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
 <script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   -->
+	<script type="text/javascript" src="docs/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="docs/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: 0}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
 
   </body>
 </html>
