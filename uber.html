@@ -59,6 +59,7 @@
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
 				  <li><a href="inking.html">Inking</a></li>
 				  <li><a href="tui.html">Tangible User Interface</a></li>
 				  <li><a href="skweezee.html">Skweezee-mote</a></li>
@@ -68,11 +69,14 @@
 				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
 				</ul>
 			  </li>
-			  <li><a href="publication.html">Publications</a></li>
-			  <li><a href="content/mehul_agrawal.pdf" target="_blank" >Resume</a></li>
-			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="index.html#resume">Resume</a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
@@ -150,12 +154,9 @@
 						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
 						  -->
 						</ul>
-						<!--
 						<ul class="nav navbar-nav navbar-right">
-						  <li><a href="#" target="_blank">Blog</a></li>
-						  <li><a href="#" target="_blank">Product Video</a></li>
+						  <li><a href="http://www.slideshare.net/MehulAgarwal/uber-solution" target="_blank">Presentation</a></li>
 						</ul>
-						-->
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</div>
@@ -172,11 +173,11 @@
 					<hr>
 					
 					<h4>Research</h4>
-					<p>Uber already offers ride to a million users per day. Uber wants to achieve the higher goal of replacing private car ownership for which they need to create a massive peer-to-peer that people can trust. This trust comes down to rooting out of problematic riders and drivers. Additionally, they have to ensure that the driver provide a premium car-fleet like service to its riders. A lot of this happens through its rating system which has flaws such as bias and subjectivity.</p>
+					<p>Uber wants to achieve the higher goal of replacing private car ownership for which they need to create a massive peer-to-peer that people can trust. This trust comes down to rooting out of problematic riders and drivers. Additionally, they have to ensure that the driver provide a premium car-fleet like service to its riders. A lot of this happens through its rating system which has flaws such as bias and subjectivity.</p>
 					
 					<p>Primary and Secondary Research were conducted to understand the existing rating system, its problems, its alternatives, users problem with that etc. The common problem was consistent in primary and secondary research. Statement by one of the driver reflects the depth of the problem-</p> 
 					
-					<blockquote>It’s soul crushing when my rating takes a dive. I spend my first waking moments wracking my brain trying to figure out what could have gone wrong with my rides the night before. <cite title="Source Title">- Uber's driver blog</cite></blockquote><br>
+					<blockquote>"It’s soul crushing when my rating takes a dive. I spend my first waking moments wracking my brain trying to figure out what could have gone wrong with my rides the night before." <cite title="Source Title">- Uber's driver blog</cite></blockquote><br>
 					
 					<h4>Problem</h4>
 						<p>The main problem that we identified with the existing rating system in Uber is that its ambiguous and inaccurate. The system is ambiguous because passengers don't have a common mental model regards to the ratings. One rider gives 3 stars on average, other 4 and whereas other gives 5, for the same experience. This further leads to inaccurracy. </p>
@@ -188,7 +189,7 @@
 	</div>
 		
 		<div style="background: url(image/uber/quote.png)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);"> 
-			<h1 class="quote" style="text-align:center; padding: 30px 10px; color: #ffffff"> <small>Problem Statement</small><br>To provide specific feedback to drivers while keeping minimum interaction for the riders.</h1>
+			<h1 class="quote" style="text-align:center; padding: 50px 10px; color: #ffffff"> <small>Problem Statement</small><br>To provide specific feedback to drivers while minimizing interactions for the riders </h1>
 		</div>
 		
 		<br>
@@ -196,7 +197,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="project_content" id="links">	
+				<div class="project_content" id="links">
 					<h4>Persona</h4>
 						<p>Two primary users for our designs were passengers and the drivers. </p>
 						<div class="clearfix"></div>
@@ -215,7 +216,7 @@
 						<div class="clearfix"></div><br>
 						
 					<h4>Iterations and Usability Testing</h4>
-						<p>We prototyped mechanisms using legos, paper and anything we could lay on our hands on. Then we decided on mechanisms based on their feasability.</p>
+						<p>We went through multiple rounds of iteration to design a rating system that is better fit for the target problem statement and users.</p>
 						<p>
 							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
 								<!-- Indicators -->
@@ -250,11 +251,11 @@
 								</a>
 							</div>
 						</p>
-						<p>Point of iteration/ learnings from it.</p>
+						<!-- <p>Point of iteration/ learnings from it.</p> -->
 						<br>
 						
 					<h4>Final Design</h4>
-						<p>The experiment was within-subject design with 10 participants using both the systems. The users evaluated both the systems on SUS scale and Attrakdiff questionnaire. They were asked to give out their preference for each system. The SUS score for Visual Feedback system is 72 whereas SUS score for Shape Changing System is 66.5. </p>
+						<p> We took the 6 most common problems faced by uber riders and made those options available upfront for users to select. In 5 star based rating system users had to convert their qualitative opinions into quantitative one. Through our design they can directly state the problem they faced. Additionally, driver would exactly know what problems riders are facing soo that they can improve upon them. The system all this without increasing any effort on the riders end.</p>
 				</div>
 			</div>
 		</div>
@@ -282,8 +283,7 @@
 			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
 					<h4>Conclusion</h4>
-						<p>Tangible interfaces couple the physical world with the digital information. Thus, change in material properties become a natural choice of interaction for such interfaces. Shape changing feedback system was found to be attracting attention of the user by the virtue of its movement and so they have potential to be more effective in catch immediate attraction of user particularly over the distance. The results also suggest that shape change as a feedback fared better to convey system status and ordinal information whereas non-screen visual (illumination based) fared better for quantitative information.</p> <br>
-					
+						<p> In the end 5 star doesnt say much, what is five star for one is 3 star for other. Moreover, drivers should be given a chance to improve themselves. This system ensures that they get a fair chance. In the end this will help drivers to provide better service. Moreover, Uber would have to fire less riders as they would automatically get feedback on what they are doing wrong. </p> <br>
 				</div>
 			</div>
 		</div>

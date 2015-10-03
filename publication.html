@@ -7,14 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="docs/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,12 +29,19 @@
 	ga('send', 'pageview');
 
 	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
 
   </head>
   <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,6 +59,7 @@
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
 				  <li><a href="inking.html">Inking</a></li>
 				  <li><a href="tui.html">Tangible User Interface</a></li>
 				  <li><a href="skweezee.html">Skweezee-mote</a></li>
@@ -63,11 +69,14 @@
 				  <li><a href="eventapp.html">Techniche App</a></li>
 				  <li><a href="hackathon.html">Hackathon</a></li>
 				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
 				</ul>
 			  </li>
-			  <li><a href="publication.html">Publications</a></li>
-			  <li><a href="content/mehul_agrawal.pdf" target="_blank" >Resume</a></li>
-			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="index.html#resume">Resume</a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
@@ -107,24 +116,28 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/assets/publication.jpg) center; background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading">
+			<h1 style="margin-top: 100px;">Publications
+					<br>
+				<small style="color: rgba(255, 255, 255, 0);"> . </small> 
+			</h3>
+		</span>
+	</div>
+	<br>
   
     <div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-12">
-				<!-- <div class="page-header">
-				  <h1 id="navbar">Publications</h1>
-				</div>
-				-->
-				
-				<span class="project_heading">
-					<h1>Publications</h1>
-				</span>
-				<hr>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
 					<h4>Conference Papers</h4>
+						<!--
 						<p>Mehul Agrawal, Apurva Gupta and Keyur Sorathia. "Exploration of Shape-Change as a Feedback Modality in Tangible User Interface", in 17th International Conference on Human-Computer Interaction (HCI International 2015), Los Angeles, CA, USA, 2015. (accepted)</p>
+						-->
 						
-						<p>Mehul Agrawal, Vero Vanden Abeele, Karen Vanderlocck and Luc Geurts. "Skweezee-mote: A case-study of a gesture-based tangible product design for a television remote control", in international Conference on Research into Design' 15 (ICORD 2015), Bangalore, India. (accepted) [<a href="content/2015_icord_skweezee.pdf"  target="_blank">Link</a>]</p>
+						<p>Mehul Agrawal, Vero Vanden Abeele, Karen Vanderlocck and Luc Geurts. "Skweezee-mote: A case-study of a gesture-based tangible product design for a television remote control", in international Conference on Research into Design' 15 (ICORD 2015), Bangalore, India. [<a href="content/2015_icord_skweezee.pdf"  target="_blank">Link</a>]</p>
 						
 						<p>Abhinav Krishna, Himanshu Bansal, Mannu Amrit, Mehul Agrawal and Minal Jain. “Threading Centric Approach Towards Email Client”, in OzCHI 2013, Adelaide, Australia. [<a href="content/2013_ozchi_email.pdf"  target="_blank">Link</a>]
 						[<a href="http://dl.acm.org/citation.cfm?id=2541102"  target="_blank">ACM</a>]</p>
@@ -135,21 +148,20 @@
 						<p>Mehul Agarwal, Himanshu Bansal & Keyur Sorathia, “Incorporating Collaboration to Foster Voluntary Teaching”, in workshop on Intelligent User interfaces for Developing Regions (IUIDR), International Conference on Intelligent User Interfaces (IUI) 2013, CA, USA (19-22nd March, 2013). [<a href="content/2013_iui_letsteach.pdf"  target="_blank">Link</a>]</p>
 					<hr>
 					
-					<h4>Internal E-Journal Publication</h4>
+					<h4>E-Journal Publication</h4>
 						<p>Aditi Padhi, Apurva Gupta, Mehul Agrawal & Manoj Majhi. “Translating Cab Sharing to Information System-Technical report on design intervention”, published in Design For All, 2013, pp. 25-30.  [<a href="http://www.designforall.in/finaljournal.pdf#25"  target="_blank">Journal</a>]</p>
 				</div>
 			</div>
 		</div>
 	</div>
-    
-	
 	
      <!-- Footer
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
-		<div class="container" >
-		 <p>Mehul Agrawal</p>
+		<div class="container">
+			<p class="pll-left col-sm-6">Mehul Agrawal</p>
+			<p class="pull-right col-sm-6" style="text-align: right; text-align: -webkit-right;">agrawal.mehul92@gmail.com | +1-812-361-2541</p>
 		</div>
 	</footer>
 
