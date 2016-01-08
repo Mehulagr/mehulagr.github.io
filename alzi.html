@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mehul Agrawal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="docs/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Place anything custom after this. -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-57952563-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
+
+  </head>
+  <body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
+				  <li><a href="inking.html">Inking</a></li>
+				  <li><a href="tui.html">Tangible User Interface</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
+				  <li><a href="chemicable.html">Chemicable</a></li>
+				  <li><a href="letsteach.html">Let's Teach</a></li>
+				  <li><a href="cabage.html">Cabage</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
+				  <li><a href="hackathon.html">Hackathon</a></li>
+				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
+				</ul>
+			  </li>
+			  <li><a href="index.html#resume">Resume</a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-11.jpg) center; background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading">
+			<h1 style="margin-top: 100px;">Alzi<br>
+				<small> Assistive technology for caregivers of Alzheimer's Patient</small> 
+			</h1>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Dec'15 (2 weeks)</p></li>
+						  <li><p>Group of 4</p></li>
+						  <li><p style="border-right: none;">Guide: Prof. Marty Siegel</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <!-- <li><a href="http://www.slideshare.net/MehulAgarwal/uber-solution" target="_blank">Presentation</a></li> -->
+						  <li><a class="project-slides" href="image/cover-11.jpg" data-gallery> Slide Show </a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<!-- The caregivers of Alzheimers patient often encounter this dilemma where they can either either keep the patient with them and risk their life (and of the people around them) or keep them safe in a nursing home away from them. They can keep the patients with them provided they can make home safe. -->
+					<p class="intro_para"> <b>Overview:</b> Alzheimer patient often walk out of homes or drive (even though they can't drive) or leave stove on or use some harmful material. This becomes safety hazard for the patient and thier family. This creates a dilemma for caregivers where they can either either keep the patient with them and risk their life (and of the people around them) or keep them safe in a nursing home away from them. We create a design intervention that will provide caregivers peace of mind by assisting him/her in keeping the patient secure. In coming up with solution for this we tried experiemnting with design process by using different techniques such as Google Design Sprint and followed 3 cycles of iteration in short period of 2 weeks. </p> <br>
+					<p class="intro_para text-center"> <a href="image/alzi/process.png" title="Process" data-gallery> <img src="image/alzi/process.png" alt="Concept" width="75%"> </a> </p> <br>
+					<p class="intro_para"> <b>My Role:</b> User Study, Problem Definition, Ideation, Google Design Sprint and Use Cases  </p>
+						
+					<hr>
+					
+					<h4>Research</h4>
+					<p>Users interview and study of online articles, Uber reports regarding rating system and drivers blogs were used to understand the existing rating system, its problems, its alternatives, users problem with that etc. The problem of inconsistent mental model regarding rating was evident both in primary and secondary research. A quote from blog of one of the Uber driver reflects the <span class="emphasis">core and depth of the problem</span>-</p> 
+					
+					<blockquote>"It’s soul crushing when my rating takes a dive. I spend my first waking moments wracking my brain trying to figure out what could have gone wrong with my rides the night before." <cite title="Source Title">- Uber's driver blog</cite></blockquote><br>
+					
+					<h4>Problem</h4>
+					<p>The main problem that we identified with the existing rating system in Uber is that its ambiguous and inaccurate. The system's ambiguity comes from <span class="emphasis">lack of shared mental model of working of rating system among the passengers</span>. One rider gives 3 stars on average, other 4 and whereas other gives 5, for the same experience. This further leads to inaccurracy. Moreover, <span class="emphasis">drivers don’t get reasons behind the bad ratings</span>. Providing them reason behind bad rating gives them a fair chance to improve themselves which will prevent uber from deactivating good drivers.</p><br>
+						
+					<h4>Ideation and Iterations</h4>
+						<!-- <a href="image/uber/u1.jpg" class="pull-right col-lg-5 col-sm-12 hidden-xs" title="Working Prototype" data-gallery> <img src="image/uber/u1.jpg" alt="Working Prototype" width="100%"> </a> -->
+						<p> We sketched and ideated with goal of a design that empowered users to provide quick qualitative feedback by bringing qualitative options upfront. </p> <br>
+
+					<h4>Concept</h4>
+						<p> We sketched and ideated with goal of a design that empowered users to provide quick qualitative feedback by bringing qualitative options upfront. <br>
+						 <center> <a href="image/alzi/concept.png" title="Concept" data-gallery> <img src="image/alzi/concept.png" alt="Concept" width="60%"> </a> </center> </p>
+						
+						
+					<div class="clearfix"></div> <br>
+						
+					<h4>Use Case</h4>
+						<p> <b>Use Case 1:</b> Wilbur is the Alzehimer's patient who has difficulty getting up after a fall. One day his caregiver goes out for shopping while he takes a fall. This use case shows how can our system be useful in that case. </p>
+						<p>
+							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">								
+									<div class="item active">
+										<a href="image/alzi/2a.jpg" title="Use Case 1: Caregiver goes to shop" data-gallery> <img src="image/alzi/2a.jpg" alt="Iteration: Round 2"> </a>
+										<div class="carousel-caption">
+										Caregiver goes to shop
+										</div>
+									</div>
+									
+									<div class="item">
+										<a href="image/alzi/2b.jpg" title="Use Case 1: Willbur takes a fall" data-gallery> <img src="image/alzi/2b.jpg" alt="Final Design" width="100%"> </a>
+										<div class="carousel-caption">
+										Willbur takes a fall
+										</div>
+									</div>
+									
+									<div class="item">
+										<a href="image/alzi/2c.jpg" title="Use Case 1: Caregiver recieves notification" data-gallery> <img src="image/alzi/2c.jpg" alt="Final Design" width="100%"> </a>
+										<div class="carousel-caption">
+										Caregiver recieves notification
+										</div>
+									</div>
+									
+									<div class="item">
+										<a href="image/alzi/2d.jpg" title="Use Case 1: Caregiver calls neighbour" data-gallery> <img src="image/alzi/2d.jpg" alt="Final Design" width="100%"> </a>
+										<div class="carousel-caption">
+										Caregiver calls neighbour
+										</div>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</p> <br>
+						
+						<p> <b>Use Case 2:</b> Wilbur used to go for walk before he became a patient. Sometimes he just goes for walking alone and then gets lost. Caregiver has set an app to trigger alert if Wilbur leaves the building. One day, caregiver goes out to buy medicines for Wilbur when he wanders off from the home. </p>
+						<p class="row" style="text-align: center; font-size: 12px">
+							<a class="col-sm-3" href="image/alzi/3a.jpg" title="Use Case 2: Caregiver is buying medicines" data-gallery> <img src="image/alzi/3a.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid;"> <br> Caregiver goes out to buy medicines. </img></a>
+							<a class="col-sm-3" href="image/alzi/3b.jpg" title="Use Case 2: She recieves notification that he has left hom" data-gallery> <img src="image/alzi/3b.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> She is alerted that he has left home. </a>
+							<a class="col-sm-3" href="image/alzi/3c.jpg" title="Use Case 2: She tracks his location" data-gallery> <img src="image/alzi/3c.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> She tracks his location. </a>
+							<a class="col-sm-3" href="image/alzi/3d.jpg" title="Use Case 2: She drives to pick him up." data-gallery> <img src="image/alzi/3d.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> She drives to pick him up. </a>
+						</p> 
+						
+						<div class="clearfix"></div> <br>
+						
+						<p> <b>Use Case 3:</b> Some things like turning stove on, bleach etc can become dangerous object in hands of the Alzheimers patient. Caregiver is working in other room when she recieves a notification saying that Wilbur has turned on the stove. </p>
+						<p class="row">
+							<a class="col-sm-4" href="image/alzi/4a.jpg" title="Use Case 2: Caregiver is buying medicines" data-gallery> <img src="image/alzi/4a.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> <br> 1: Blah Blah </a>
+							<a class="col-sm-4" href="image/alzi/4b.jpg" title="Use Case 2: Caregiver is buying medicines" data-gallery> <img src="image/alzi/4b.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> </a>
+							<a class="col-sm-4" href="image/alzi/4c.jpg" title="Use Case 2: Caregiver is buying medicines" data-gallery> <img src="image/alzi/4c.jpg" alt="Iteration: Round 2" width="100%" style="border: 1px solid"> </a>
+						</p> 
+						
+						<div class="clearfix"></div><br>
+						
+						
+					<h4>Conclusion</h4>
+						<p> In the end 5 star doesnt say much, what is five star for one is 3 star for other. Moreover, drivers should be given a chance to improve themselves. This system ensures that they get a fair chance. In the end this will help drivers to provide better service. Moreover, Uber would have to fire less riders as they would automatically get feedback on what they are doing wrong. <br> </p> 
+						<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<!-- <a href="#"> <- Previous project </a> -->
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="inking.html"> Inking -> </a>
+			</div>
+		</div>
+	</div>
+    
+	
+	
+     <!-- Footer
+      ================================================== -->
+
+	<footer class="bs-footer" role="contentinfo">
+		<div class="container">
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
+			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
+				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
+				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;
+				<a href="http://www.slideshare.net/MehulAgarwal"> <img src="image/assets/slideshare.png" width="35px"> </a>
+			</p>
+		</div>
+	</footer>
+
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
+	<script type="text/javascript" src="docs/bootstrap.js"></script>
+	<script type="text/javascript" src="docs/application.js"></script>
+	<script type="text/javascript" src="docs/jquery.validate.js"></script>
+	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
+	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
+	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
+
+  </body>
+</html>
