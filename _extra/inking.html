@@ -165,28 +165,27 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="project_content" id="links">
-					<p> Although the existing inking and notetaking apps for tablet like Evernote, OneNote etc. are powerful, but they do not harness all the capabilities of digital medium. Features in these app are limited to most common functions like cut, copy, paste, undo, redo, stroke color changes, etc. The digital medium is very powerful and can do many more things like perform calculations, visualize, search etc. We are trying to embed these features in a note taking app without complicating its interface. We propose a novel stylus based gesture and keyword recognition system that can be used to access these features in simpler way. </p> <br>
+					<p> Although the existing inking and notetaking apps for tablet like evernote, one note etc. powerfull, but they do not harness all the capabilities of digital medium. Features in these app are limited to most common functions like cut, copy, paste, undo redo stroke colour and width change, etc. The digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features in a note taking app. In the app we propose, these wide array of functions have common umbrella of accessing them i.e. pen based gestures/ keywords. </p> <br>
 					
 					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/ASaXe4QybIA" frameborder="0" allowfullscreen></iframe></center></div> <br>
+				
+					<h4>Problem Space</h4> <p> Design an app for touch devices that uses Inking (Pen based input on digital canvas) as the primary way of input and creation.</p><br>
 						
-					<h4>Introduction</h4>
-						<p>Market is flooded with apps that use Inking capabilities, so it was important for us to understand- What all is already existing? What are most common features in inking applications? Gaps in the existing market? Simultaneously, a study of research papers helped us in defining some problems that users face while using inking applications and their solutions.</p> <br>
+					<h4>Secondary Study</h4>
+						<p>Comparitive study helped in understanding the present market of inking applications. They helped us in answering questions like- What all is already exsisting? What are most common features in inking applications? and many more. Simultaneously, a study of research papers helped us in defining some problems that users face while using inking applications and their solutions.</p>
+						<p><a href="image/inking/i2.jpg" title="Comparitive Study" data-gallery> <img src="image/inking/i2.jpg" alt="Comparitive Study" width="100%" /> </a> </p>
+						<br>
 						
-						<blockquote style="font-size: 24px; line-height: 1.5; text-align: center; border: none;">Design an app for touch devices that uses Inking (Pen based input on digital canvas) as the primary way of input and creation.</blockquote> <br>
-						
-					<h4>Understanding behavior of users</h4>
-						<p>Users were questioned to understand their existing inking patterns and needs. Questions for user study encompassed all three aspects of inking i.e. notes, diagrams and drawings. Ten users were interviewed in the process. </p> <br>
-						
+					<h4>Primary Study</h4>
+						<p>Users were questioned to understand their exsisting inking patterns and needs. Questions for user study encompassed all three aspects of inking i.e. notes, diagrams and drawings. Ten users were interviewed in the process. Some important points that emerged out of the interviews were-<br>
+						Making side notes, “underlining” important points and marking content for later review using different symbols, markers etc.<br>
+						Using other tools like calculators, convertors, graphs, etc.</p>
 						<p>
 							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 								<!-- Indicators -->
 								<ol class="carousel-indicators">
 									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="5"></li>
 								</ol>
 
 								<!-- Wrapper for slides -->
@@ -204,7 +203,31 @@
 										User Interviews Analysis
 										</div>
 									</div>
-									<div class="item">
+								</div>
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</p>
+						<p>Further, an activity was conducted to get understanding of interaction patterns when users interacted with the paper and when users interacted with the tablet. One major observation during activities was use of non-preferred hand for interacting with paper (using one hand to move (reposition) the paper and other to write on paper). Two different activities were undertaken by 5 users each.</p>
+						<p>
+							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
 										<a href="image/inking/i4.jpg" title="Users inking on paper" data-gallery> <img src="image/inking/i4.jpg" alt="Users inking on paper"> </a>
 										<div class="carousel-caption">
 										Activity: Users inking on paper
@@ -234,47 +257,21 @@
 								</div>
 
 								<!-- Controls -->
-								<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+								<a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left"></span>
 								</a>
-								<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+								<a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
 									<span class="glyphicon glyphicon-chevron-right"></span>
 								</a>
 							</div>
-						</p> <br>
+						</p><br>
 						
-						<p>We conducted as a way to observe notetaking behavior of users. We asked users to take lecture notes on paper and on tablet. We observed what interactions were natural on paper and how were they different as compared to tablet. Combining these we were able to observe some interaction patterns for the users. Two different activities were undertaken by 5 users each.</p> <br>
-				</div>
-			</div>
-		</div>
-	</div>
-		
-		<div style="background: url(image/inking/i9.jpg)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);"> 
-			<div class="container" style="padding: 20px 0px;"> 
-				<h1 class="quote image-quote" style="font-size: 32px; line-height: 1.5">  Design interactions for a digital note taking application which leverages the experience of paper and the power of digital medium to create more productive content for college students. </h1> 
-			</div>
-		</div>
-		
-		<br>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="project_content" id="links">
-					<h4>Insights</h4>
-						<p>We came across some really interesting insights. Users performed micro-interactions like making side notes, “underlining” important points and marking content for later review using different symbols, markers etc. They used other tools in association with the activity of notetaking like calculators, convertors, graphs, etc. They didn't want to think too much while taking notes. They used non-preferred hand for interacting with paper: using one hand to move (reposition) the paper and other to write on paper.</p> <br>
-						
-						<div class="row" style="text-align: center">
-							<div class="col-md-offset-2 col-xs-6 col-sm-3 col-md-2"> <img src="image/inking/icon1.png" width="100%" alt="Micro-interections "> <br> Micro-interections </div>
-							<div class="col-xs-6 col-sm-3 col-md-2"> <img src="image/inking/icon2.png" width="100%" alt="Use of other tools"> <br> Use of other tools</div>
-							<div class="col-xs-6 col-sm-3 col-md-2"> <img src="image/inking/icon3.png" width="100%" alt="Simple"> <br> Simple </div>
-							<div class="col-xs-6 col-sm-3 col-md-2"> <img src="image/inking/icon4.png" width="100%" alt="Use of Non-preferred hand"> <br> Use of Non-preferred hand </div>
-						</div>
-						
-					<div class="clearfix"> </div> <br>
+					<h4>Design Statement and User Group</h4>
+						<p>Design interactions for a digital note taking application which leverages the experience of paper and the power of digital medium to create more productive content for college students.</p>
+						<p><a href="image/inking/i6.jpg" title="Analysis of gestures" data-gallery><img src="image/inking/i6.jpg" width="100%"></a></p><br>
 						
 					<h4>Scenarios</h4>
-						<p>Then we thought about ideas to solve the problem along with scenarios in with scenarios in which they could help. Two scenarios that stood out to us were using a second surface were we can keep notes and second using gestures to perform tasks such as adding reminders, highlighting etc. </p> <br>
+						<p>Then we thought about ideas to solve the problem along with scenarios in with scenarios in which they could help.</p>
 						<p>
 							<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel2">
 								<!-- Indicators -->
@@ -308,12 +305,12 @@
 									<span class="glyphicon glyphicon-chevron-right"></span>
 								</a>
 							</div>
-						</p> <br>
+						</p>
+						<p>A scenario was choosen that augments the surface with help of gestures.</p><br>
 					
-					<h4>Concept and Prototype</h4>
-						<blockquote style="font-size: 24px; line-height: 1.5; text-align: center; border: none;">Augment capability of notetaking app by providing advanced features using gestures or keywords.</blockquote>
-						<p>How many additional features does evernote provide as compared to paper? The current app like evernote, one note etc. have only few features like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features using a note taking app. These functions have common umbrella of accessing them i.e. pen based gestures/ keywords. A prototype with animation and gestures was designed using powerpoint.</p> <br>
-						<p><a href="image/inking/i10.jpg" title="Prototype" data-gallery><img src="image/inking/i10.jpg" alt="Prototype" width="100%"></a></p> <br>
+					<h4>Product and Prototype</h4>
+						<p>How many additional features does evernote provide as compared to paper? The current app like evernote, one note etc. have only few features like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features using a note taking app. These functions have common umbrella of accessing them i.e. pen based gestures/ keywords. A prototype with animation and gestures was designed using powerpoint.</p>
+						<p><a href="image/inking/i10.jpg" title="Prototype" data-gallery><img src="image/inking/i10.jpg" alt="Prototype" width="100%"></a></p>
 						<p>Novelty of the app lies in the way user interacts with the system to perform common tasks. The gestures are adopted from the daily behavior of user while taking notes. </p><br>
 						
 				</div>
@@ -327,7 +324,7 @@
 				<a href="uber.html"> <- Uber: Rating System 2.0 </a>
 			</div>
 			<div class="col-sm-5" style="text-align: right">
-				<a href="eventapp.html"> Techniche App -> </a>
+				<a href="tui.html"> Tangible User Interface -> </a>
 			</div>
 		</div>
 	</div>
