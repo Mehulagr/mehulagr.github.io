@@ -86,6 +86,14 @@ h2, .project_content h4 {
 	margin: 5%;
 }
 
+#portfoliolist .portfolio .thumbnail a{
+	text-decoration: none;
+}
+
+#portfoliolist .portfolio .thumbnail:hover{
+	background-color: #fcfcfc;
+}
+
 /* HomePage Jumbotron */
 
 /* Project Jumbotron */
