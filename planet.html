@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mehul Agrawal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mehul Agrawal">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="docs/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Place anything custom after this. -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-57952563-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+	
+	<style>
+		.jumbotron::before {
+			filter: url('#blur');
+			filter: blur(5px);
+		}
+	</style>
+
+  </head>
+  <body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div>
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
+				  <li><a href="inking.html">Inking</a></li>
+				  <li><a href="tui.html">Tangible User Interface</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
+				  <li><a href="chemicable.html">Chemicable</a></li>
+				  <li><a href="letsteach.html">Let's Teach</a></li>
+				  <li><a href="cabage.html">Cabage</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
+				  <li><a href="hackathon.html">Hackathon</a></li>
+				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
+				</ul>
+			  </li>
+			  <li><a href="index.html#resume">Resume</a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/planet/cover2.png) center; background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading">
+			<h1 style="margin-top: 100px;"> Planetary Embodiment<br>
+				<small> Experience the bigger picture </small> 
+			</h1>
+		</span>
+	</div>
+
+	
+	<nav class="navbar-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Mar'16 - Apr'16 (5 weeks)</p></li>
+						  <li><p style="border-right: none;">Group of 4</p></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a class="project-slides" href="image/planet/cover.png" data-gallery> Slide Show </a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p>This is a different kind </p><br>
+					
+					<div class="videoWrapper "> <center> 
+								<iframe src="https://player.vimeo.com/video/165093249" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</center> </div>
+					
+					<hr>
+					
+					<h4>Introduction</h4>
+					<p>We started with a basic question- What is the purpose of a space museum? Is it teaching facts or is it to inspire about space? Thats when we realized that space museum have an important job to inspire people. We looked at different ways that it can inspire people like inspire kids about space and inspire everyone to look at bigger picture. </p> <br>
+					
+					<h4>Process</h4>
+					<p>The focus in this project was on experience (not the design detail but the experience created by the design) and how to break away from designers fixation. We used creative methods such as experience prototype, pastiche scenarios and critical design to explore different design concepts.</p> <br>
+					
+					<h4>Ideation</h4>
+					<p>The focus in this project was on experience (not the design detail but the experience created by the design) and how to break away from designers fixation. We used creative methods such as experience prototype, pastiche scenarios and critical design to explore different design concepts.</p> 
+					<p><a href="image/planet/ideation.png" title="Initial Design" data-gallery> <img src="image/planet/ideation.png" alt="Initial Design" width="100%" /> </a> </p> <br><br>
+						
+					<h5>Pastiche Scenario</h5>
+					<div class="row" style="margin:0px">
+						<div class="col-sm-4"> <a href="image/planet/pastiche.jpg" title="Pastiche Scenario" data-gallery> <img src="image/planet/pastiche.jpg" alt="Pastiche Scenario" width="100%" /> </a> </div>
+						
+						<p> The design we came up with asked riders if they faced any of the 6 most-frequently occurring problems. The system then reported to driver if he was lagging in any one of the elements. Example, driver was informed if more than 5% of his customers faced problems with his behavior. </p> 
+					</div>
+					
+					<div class="clearfix"></div> <br>
+					
+					<h5>Critical Design</h5>
+					<div class="row" style="margin:0px">
+						<div class="col-sm-4 pull-right" style="padding-right:0px"> <div class="videoWrapper ">
+							<center> 
+								<iframe src="https://www.youtube.com/embed/CtYcFXDu-Dc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</center>
+						</div></div>
+						
+						<p> The concept is about extreme embodiment. We as human being can only “see” - “virtually” - one motion at a time. It may be the motion of planet itself or the motion of one or more planets orbiting the sun or the motion of solar system or the galaxy etc. <br> But what if we were a planet? A planet spinning itself and orbiting at the same time around the Sun at high speed? A planet goes through all kinds environmental changes. What if those were experienced by us by becoming a planet? </p> 
+					</div>
+					
+					<div class="clearfix"></div> <br>
+					
+					<h5>Experience Prototype</h5>
+					<div class="row" style="margin:0px">
+						<div class="col-sm-4" style="padding-left:0px"> <div class="videoWrapper ">
+							<center> 
+								<iframe src="https://www.youtube.com/embed/HPKMUckDa30" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</center>
+						</div></div>
+						
+						<p> The design we came up with asked riders if they faced any of the 6 most-frequently occurring problems. The system then reported to driver if he was lagging in any one of the elements. Example, driver was informed if more than 5% of his customers faced problems with his behavior. </p> 
+					</div>
+						
+					<div class="clearfix"></div> <br>
+						
+					<h4>Final Design</h4>
+						<p> We took the 6 most common problems faced by uber riders and made those options available upfront for users to select. In 5 star based rating system users had to convert their qualitative opinions into quantitative one. Through our design they can directly state the problem they faced. Additionally, driver would exactly know what problems riders are facing soo that they can improve upon them. The system all this without increasing any effort on the riders end. </p> <br>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+	<div class="row" style="background: url(image/uber/quote.jpg)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75); margin:0px"> 
+		<p> 
+			<a href="image/uber/1.png" title="Home" data-gallery>
+				<img src="image/uber/1.png" width="100%" class="col-md-offset-2 col-sm-3 col-md-2" style="padding: 15px;">
+			</a>
+			<a href="image/uber/2.png" title="Identifying Problems" data-gallery>
+				<img src="image/uber/2.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+			</a>
+			<a href="image/uber/3.png" title="Reporting screen" data-gallery>
+				<img src="image/uber/3.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+			</a>
+			<a href="image/uber/4.png" title="Reporting" data-gallery>
+				<img src="image/uber/4.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+			</a>
+		</p>
+	</div> <br>
+	
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<h4>Conclusion</h4>
+						<p> In the end 5 star doesnt say much, what is five star for one is 3 star for other. Moreover, drivers should be given a chance to improve themselves. This system ensures that they get a fair chance. In the end this will help drivers to provide better service. Moreover, Uber would have to fire less riders as they would automatically get feedback on what they are doing wrong. <br> </p> 
+						<hr>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<!-- <a href="alzi.html"> <- Alzi </a> -->
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="inking.html"> Inking -> </a>
+			</div>
+		</div>
+	</div>
+    
+	
+	
+     <!-- Footer
+      ================================================== -->
+
+	<footer class="bs-footer" role="contentinfo">
+		<div class="container">
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
+			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
+				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
+				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;
+				<a href="http://www.slideshare.net/MehulAgarwal"> <img src="image/assets/slideshare.png" width="35px"> </a>
+			</p>
+		</div>
+	</footer>
+
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
+	<script type="text/javascript" src="docs/bootstrap.js"></script>
+	<script type="text/javascript" src="docs/application.js"></script>
+	<script type="text/javascript" src="docs/jquery.validate.js"></script>
+	<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
+	<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
+	<script type="text/javascript" src="docs/metro-bootstrap/metro-docs.js"></script>
+	
+	<script type="text/javascript" src="docs/jquery.blueimp-gallery.min.js"></script>
+
+  </body>
+</html>
