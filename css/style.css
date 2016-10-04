@@ -63,8 +63,9 @@ h2, .project_content h4 {
 
 #portfoliolist .portfolio .thumbnail h4{
 	line-height: 1.25;
-	color: #0072BB;
+	color: #37474F; /* #0072BB; */
 	font-weight: 500;
+	font-size: 16px;
 }
 
 #portfoliolist .portfolio .thumbnail:hover {
