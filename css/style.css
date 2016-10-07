@@ -55,7 +55,10 @@ h2, .project_content h4 {
 /* Project Thumbnails home page */
 #portfoliolist .portfolio .thumbnail {
 	border: None;
-	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+	box-shadow: None;
+	background-color: #F5F5F5;
+	text-align: center;
+	/* box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2); */
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 30px;
@@ -66,6 +69,7 @@ h2, .project_content h4 {
 	color: #37474F; /* #0072BB; */
 	font-weight: 500;
 	font-size: 16px;
+	text-align: center;
 }
 
 #portfoliolist .portfolio .thumbnail:hover {

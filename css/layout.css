@@ -8,24 +8,28 @@
 #filters {
 	padding:0;
 	list-style:none;
+	text-align: center;
 }
 
-	#filters li {
-		float:left;
-	}
-	
-	#filters li span {
-		display: block;
-		padding:5px 20px;		
-		text-decoration:none;
-		color:#666;
-		cursor: pointer;
-	}
-	
-	#filters li span.active {
-		background: #0097A7; /* #e95a44; */
-		color:#fff;
-	}
+#filters li {
+	/* float:left; */
+	text-align: center;
+    display: -webkit-inline-box;
+}
+
+#filters li span {
+	display: block;
+	padding:5px 20px;		
+	text-decoration:none;
+	color: #888;
+	cursor: pointer;
+}
+
+#filters li span.active {
+	/*background: #0097A7;  #e95a44; */
+	color: #000;
+	border-bottom: 1px solid #000000;
+}
  
 
  
