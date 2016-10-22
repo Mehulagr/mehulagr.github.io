@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mehul Agrawal | Portfolio</title>
+    <title>Mehul Agrawal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mehul Agrawal">
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,700" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +29,7 @@
 
 	ga('create', 'UA-57952563-1', 'auto');
 	ga('send', 'pageview');
+
 	</script>
 	
 	<style>
@@ -38,10 +39,9 @@
 		}
 	</style>
 
-</head>
+  </head>
   <body>
 	
-	<!-- Navigaton -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,23 +52,39 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.html">mehul agrawal</a>
+			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
 		  </div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-			  <!-- <li> <a href="index.html#projects">Projects</a> </li> -->
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
+				  <li><a href="inking.html">Inking</a></li>
+				  <li><a href="tui.html">Tangible User Interface</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
+				  <li><a href="chemicable.html">Chemicable</a></li>
+				  <li><a href="letsteach.html">Let's Teach</a></li>
+				  <li><a href="cabage.html">Cabage</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
+				  <li><a href="hackathon.html">Hackathon</a></li>
+				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
+				</ul>
+			  </li>
 			  <li><a href="index.html#resume">Resume</a></li>
-			  <li><a href="index.html#contact">Contact</a></li>
-			  <li class="nav-projects hidden-xs" style="margin-right: 1px"><a href="alzi.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
-			  <li class="nav-projects hidden-xs"><a href="cabage.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
 	
-	<!-- Bootstrap Image Gallery lightbox -->
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
 		<!-- The container for the modal slides -->
 		<div class="slides"></div>
@@ -104,42 +120,66 @@
 	</div>
 	
 	
-	<div class="project-jumbotron jumbotron" style="background: url(image/cover-05.jpg); background-size:cover;"> </div>
-	
-	<div class="project-title"> 
-		<div class="container"> 
-			<h3>Event Guiding Application for a Technical Fest, Techniche<br>
-			<small>Techniche Event App</small></h3><br>
-			<p>Project Duration: Aug'12 - Sep'12  <b> | </b>  Team: 4 <b> | </b> <a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank"> Play Store </a></p><br>
-		</div>
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-05.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Techniche Event App <br>
+				<small> Event Guiding Application for a Technical Fest, Techniche </small> 
+			</h3>
+		</span>
 	</div>
-  
-    <div class="project_content" id="links">
+
+	
+	<nav class="navbar-project">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<p> <b>Summary: </b> While attending a fest, people need different kind of information before fest and during it. While before fest people can easily access fest website and get the information, their information during fest is limited to announcements, word-of-mouth and pre-planned information. They tend to miss out events as they were not aware of it or time or venue of event changed. Thus, we made an app to guide people during a fest. </p> <br>
-				
-					<h4 style="color: black">INTRODUCTION</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
-						<p>This was a self initiated project done to get better understanding of design methodology. The research was conducted to cater to needs of varied people coming to Techniche, the technical fest of IIT Guwahati.</p> <br>
-						
-					<h4 style="color: black">SECONDARY STUDY</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
-						<p>We started with going over through all posters, websites, articles and other material of Techniche to identify 10 words that define Techniche and form its core principle and simultaneously did market research for comparative analysis of the applications with similar functionality or objective as our application. The comparative analysis was done for gap and trend analysis.</p> <br>
-						<p><a href="image/eventapp/e1-02.jpg" title="Comparitive Study" data-gallery> <img src="image/eventapp/e1-02.jpg" alt="Comparitive Study" width="100%" style="border: 1px solid #999;"> </a></p><br>
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Aug'12 - Sep'12</p></li>
+						  <li><p>Group of 4</p></li>
+						  <li><p style="border-right: none;">Side Project</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://play.google.com/store/apps/details?id=org.techniche.techniche" target="_blank"> Play Store </a></li>
+							<li><a class="project-slides" href="image/cover-05.jpg" data-gallery> Slide Show </a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p> While attending a fest, people need different kind of information before fest and during it. While before fest people can easily access fest website and get the information, their information during fest is limited to announcements, word-of-mouth and pre-planned information. They tend to miss out events as they were not aware of it or time or venue of event changed. Thus, we made an app to guide people during a fest. </p> <br>
 					
-					<h4 style="color: black">PRIMARY STUDY</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<h4>Introduction</h4>
+						<p>This was a self initiated project done to get better understanding of design methodology. The research was conducted to cater to needs of varied people coming to Techniche, the technical fest of IIT Guwahati.</p><br>
+						
+					<h4>Secondary Study</h4>
+						<p>We started with going over through all posters, websites, articles and other material of Techniche to identify 10 words that define Techniche and form its core principle and simultaneously did market research for comparative analysis of the applications with similar functionality or objective as our application. The comparative analysis was done for gap and trend analysis.</p>
+						<p><a href="image/eventapp/e1-02.jpg" title="Comparitive Study" data-gallery> <img src="image/eventapp/e1-02.jpg" alt="Comparitive Study" width="100%" style="border: 1px solid #999;"> </a></p><br>
+						
+					<h4>Primary Research</h4>
 						<p>Open ended questionnaire was designed for 3 different categories of people that were the potential users of this App- Stakeholders, Internal users (people living in IITG) and External users (not a part of IITG, who had been part of Techniche earlier or any other technical fest).</p>
 						<p><a href="image/eventapp/e1-01.jpg" title="Interview Questionnaire" data-gallery> <img src="image/eventapp/e1-01.jpg" alt="Interview Questionnaire" width="100%"> </a></p><br>
 						
-					<h4 style="color: black">PERSONA AND USE CASE</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<h4>Persona and Use Case</h4>
 						<p>All these surveys were compiled and analyzed and it formed our basis of Persona of our user. Through we tried to understand the existing system of getting all the info and problems in them.  Persona and Use Cases formed the base of UI design of the application. </p>
 						<p>
 							<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
@@ -192,15 +232,11 @@
 							</div>
 						</p><br>
 						
-					<h4 style="color: black">INFORMATION ARCHITECTURE</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<h4>Information Architecture</h4>
 						<p>Info Architecture was made using the all the data collected in Secondary Research keeping in mind the needs of users that became evident in Primary Research.</p>
 						<p><a href="image/eventapp/e1-004.jpg" title="Information Architecture" data-gallery> <img src="image/eventapp/e1-004.jpg" alt="Information Architecture" width="100%"> </a></p><br>
 						
-					<h4 style="color: black">MOCKUPS</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<h4>Mock Up</h4>
 						<p>Wire-frame and Interface were designed on the based on research.</p>
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						  <!-- Indicators -->
@@ -233,18 +269,33 @@
 						  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						  </a>
-						</div> <br>
+						</div>
+						
+						<br>
 				</div>
 			</div>
 		</div>
-	</div> <br><br>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="alzi.html"> <- Alzi </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="cabage.html"> Cabage -> </a>
+			</div>
+		</div>
+	</div>
+    
+	
 	
      <!-- Footer
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
 		<div class="container">
-			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Developed by Mehul Agrawal</p>
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
 			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
 				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
 				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;

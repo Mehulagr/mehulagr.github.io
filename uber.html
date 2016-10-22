@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mehul Agrawal</title>
+    <title>Mehul Agrawal | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mehul Agrawal">
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,700" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +29,6 @@
 
 	ga('create', 'UA-57952563-1', 'auto');
 	ga('send', 'pageview');
-
 	</script>
 	
 	<style>
@@ -39,9 +38,10 @@
 		}
 	</style>
 
-  </head>
+</head>
   <body>
 	
+	<!-- Navigaton -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,39 +52,23 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
+			<a class="navbar-brand" href="index.html">mehul agrawal</a>
 		  </div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-			  <li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-				<ul class="dropdown-menu">
-				  <li><a href="uber.html">Uber</a></li>
-				  <li><a href="inking.html">Inking</a></li>
-				  <li><a href="tui.html">Tangible User Interface</a></li>
-				  <li><a href="skweezee.html">Skweezee-mote</a></li>
-				  <li><a href="chemicable.html">Chemicable</a></li>
-				  <li><a href="letsteach.html">Let's Teach</a></li>
-				  <li><a href="cabage.html">Cabage</a></li>
-				  <li><a href="eventapp.html">Techniche App</a></li>
-				  <li><a href="hackathon.html">Hackathon</a></li>
-				  <li><a href="ozchi.html">Ozchi</a></li>
-				  <li role="separator" class="divider"></li>
-				  <li><a href="publication.html">Publications</a></li>
-				</ul>
-			  </li>
+			  <!-- <li> <a href="index.html#projects">Projects</a> </li> -->
 			  <li><a href="index.html#resume">Resume</a></li>
-			  <li><a href="index.html#about">About</a></li>
-			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
-			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
+			  <li><a href="index.html#contact">Contact</a></li>
+			  <li class="nav-projects hidden-xs" style="margin-right: 1px"><a href="planet.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
+			  <li class="nav-projects hidden-xs"><a href="chemicable.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
 	
-	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<!-- Bootstrap Image Gallery lightbox -->
 	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
 		<!-- The container for the modal slides -->
 		<div class="slides"></div>
@@ -120,183 +104,129 @@
 	</div>
 	
 	
-	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-10.jpg) center; background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
-		<span class="project_heading">
-			<h1 style="margin-top: 100px;">Uber: Rating System 2.0 <br>
-				<small> Re-designing Uber's rating system for a thoughtful feedback </small> 
-			</h1>
-		</span>
-	</div>
-
+	<div class="project-jumbotron jumbotron" style="background: url(image/cover-10.jpg); background-size:cover;"> </div>
 	
-	<nav class="navbar-project">
+	<div class="project-title"> 
+		<div class="container"> 
+			<h3>Re-designing Uber's rating system for a thoughtful feedback<br>
+			<small>Uber: Rating System 2.0</small></h3><br>
+			<p>Project Duration: Sept'15 (2 weeks)  <b> | </b>  Team: 4 <b> | </b> Academic Project</p><br>
+		</div>
+	</div>
+  
+    <div class="project_content" id="links">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-10 col-md-offset-1">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div>
-						<center>
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
-								Project Details
-							</button>
-						</center>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
-						<ul class="nav navbar-nav navbar-left">
-						  <li><p>Sept'15 (2 weeks)</p></li>
-						  <li><p style="border-right: none;">Group of 4</p></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-						  <li><a class="project-slides" href="image/cover-10.jpg" data-gallery> Slide Show </a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+					<p> <b>Summary: </b> Uber has created a massive peer-to-peer ride sharing service that is offering service to millions of riders a day. This system relies heavily on trust which comes through its 5-star rating system. But, this rating system is biased and inefficient in capturing (and conveying) the qualitative problems faced by riders. We followed an iterative user centered design process to design a solution that provides more qualitative feedback (than system of stars) to drivers without increasing interactions for the riders. </p> <br>
+				
+					<h4 style="color: black">RESEARCH</h4>
+					<hr align="left" width="10%" style="margin: 10px 0px">
+					<h4 class="sub-heading">Whats wrong with "5 star" rating?</h4>
+						<p>Uber’s rating system is really essential as it helps them to root out bad drivers and riders. But in the existing rating system is subjective leading to inaccurate ratings. User’s interview, study of online articles, Uber reports regarding rating system and drivers’ blogs were used to understand the problems with the existing rating system. The problem of inconsistent mental model regarding rating was evident both in primary and secondary research.</p> <br>
 				</div>
 			</div>
 		</div>
-	</nav>
-  
-    <div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="project_content" id="links">
-					<p>Uber has created a massive peer-to-peer ride sharing service that is offering service to millions of riders a day. This system relies heavily on trust which comes through its 5-star rating system. But, this rating system is biased and inefficient in capturing (and conveying) the qualitative problems faced by riders. We followed an iterative user centered design process to design a solution that provides more qualitative feedback (than system of stars) to drivers without increasing interactions for the riders.</p><br>
-					
-					<h4>Research</h4>
-					<p>Uber’s rating system is really essential as it helps them to root out bad drivers and riders. But in the existing rating system is subjective leading to inaccurate ratings. User’s interview, study of online articles, Uber reports regarding rating system and drivers’ blogs were used to understand the problems with the existing rating system. The problem of inconsistent mental model regarding rating was evident both in primary and secondary research.</p> <br>
-					
-				</div>
-			</div>
-		</div>
-	</div>
 		
-		<div style="background: url(image/uber/quote.jpg)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);"> 
+		<div style="background: url(image/uber/quote.jpg)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75); margin-bottom: 40px"> 
 			<div class="container" style="padding: 20px 0px;"> 
 				<h1 class="quote image-quote" style="font-size: 32px; line-height: 1.5">  "It’s soul crushing when my rating takes a dive. I spend my first waking moments wracking my brain trying to figure out what could have gone wrong with my rides the night before." <cite title="Source Title">- Uber's driver blog</cite> </h1> 
 			</div>
 		</div>
 		
-		<br>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="project_content" id="links">
-					<h4>Problem</h4>
-					<p>The main problem that we identified with the existing rating system in Uber is that its ambiguous and inaccurate. The system's ambiguity comes from <span class="emphasis">lack of shared mental model of working of rating system among the passengers</span>. One rider gives 3 stars on average, other 4 and whereas other gives 5, for the same experience. This further leads to inaccurracy. Moreover, <span class="emphasis">drivers don’t get reasons behind the bad ratings</span>. Providing them reason behind bad rating gives them a fair chance to improve themselves which will prevent uber from deactivating good drivers.</p> <br>
-					
-					<blockquote style="font-size: 24px; line-height: 1.5; text-align: center; border: none;">Providing specific feedback to drivers while minimizing interactions for the riders.</blockquote>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+					<h4 style="color: black">PROBLEM</h4>
+					<hr align="left" width="10%" style="margin: 10px 0px">
+					<h4 class="sub-heading">Providing specific feedback to drivers while minimizing interactions for the riders.</h4>
+						<p>The main problem that we identified with the existing rating system in Uber is that its ambiguous and inaccurate. The system's ambiguity comes from <b>lack of shared mental model of working of rating system among the passengers</b>. One rider gives 3 stars on average, other 4 and whereas other gives 5, for the same experience. This further leads to inaccurracy. Moreover, <b>drivers don’t get reasons behind the bad ratings</b>. Providing them reason behind bad rating gives them a fair chance to improve themselves which will prevent uber from deactivating good drivers.</p><br>
 						
-					<div class="clearfix"></div> <br>
+					<h4 style="color: black">CONCEPT</h4>
+					<hr align="left" width="10%" style="margin: 10px 0px">
+					<h4 class="sub-heading">Quick qualitative feedback</h4>
+						<p>The design we came up with asked riders if they faced any of the 6 most-frequently occurring problems. The system then reported to driver if he was lagging in any one of the elements. Example, driver was informed if more than 5% of his customers faced problems with his behavior.</p><br>
 						
-					<h4>Concept</h4>
-						<p class="col-sm-3 pull-right hidden-xs" style="font-size: 24px; line-height: 1.5; text-align: center">Quick qualitative feedback</p>
-						<p> The design we came up with asked riders if they faced any of the 6 most-frequently occurring problems. The system then reported to driver if he was lagging in any one of the elements. Example, driver was informed if more than 5% of his customers faced problems with his behavior. </p>
-						<p class="visible-xs" style="font-size: 24px; line-height: 1.5; text-align: center">Quick qualitative feedback</p>
+					<h4 style="color: black">ITERATION</h4>
+					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
+					<h4 class="sub-heading">Quick qualitative feedback</h4> -->
+						<p>We conducted a semi-structured <b>usability testing followed by design critique</b> with other designers to identify problems with the design. A catch that emerged in design critique and user testing was use of negative options. The design encouraged leaving negative feedback. So, to make design practical we worked on removing this bias. These prototypes went through continous loop of design critque and quick-and-dirty usability testing.</p><br>
 						
-					<div class="clearfix"></div> <br>
-						
-					<h4>Iterations</h4>
-						<p>We conducted a semi-structured <span class="emphasis">usability testing followed by design critique</span> with other designers to identify problems with the design. A catch that emerged in design critique and user testing was use of negative options. The design encouraged leaving negative feedback. So, to make design practical we worked on removing this bias. These prototypes went through continous loop of design critque and quick-and-dirty usability testing.</p> <br>
-						<p>
-							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
-								<!-- Indicators -->
-								<ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
-								</ol>
+					<p>
+						<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+							</ol>
 
-								<!-- Wrapper for slides -->
-								<div class="carousel-inner">								
-									<div class="item active">
-										<a href="image/uber/u2.jpg" title="User Testing" data-gallery> <img src="image/uber/u2.jpg" alt="Iteration: Round 1"  width="100%"> </a> 
-										<div class="carousel-caption">
-										Iteration: Round 1
-										</div>
-									</div>
-									
-									<div class="item">
-										<a href="image/uber/u3.jpg" title="User Testing" data-gallery> <img src="image/uber/u3.jpg" alt="Iteration: Round 2"> </a>
-										<div class="carousel-caption">
-										Iteration: Round 2
-										</div>
-									</div>
-									
-									<div class="item">
-										<a href="image/uber/u4.jpg" title="User Testing" data-gallery> <img src="image/uber/u4.jpg" alt="Final Design Sketches" width="100%"> </a>
-										<div class="carousel-caption">
-										Final Design Sketches
-										</div>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">								
+								<div class="item active">
+									<a href="image/uber/u2.jpg" title="User Testing" data-gallery> <img src="image/uber/u2.jpg" alt="Iteration: Round 1"  width="100%"> </a> 
+									<div class="carousel-caption">
+									Iteration: Round 1
 									</div>
 								</div>
-
-								<!-- Controls -->
-								<a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left"></span>
-								</a>
-								<a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right"></span>
-								</a>
+								
+								<div class="item">
+									<a href="image/uber/u3.jpg" title="User Testing" data-gallery> <img src="image/uber/u3.jpg" alt="Iteration: Round 2"> </a>
+									<div class="carousel-caption">
+									Iteration: Round 2
+									</div>
+								</div>
+								
+								<div class="item">
+									<a href="image/uber/u4.jpg" title="User Testing" data-gallery> <img src="image/uber/u4.jpg" alt="Final Design Sketches" width="100%"> </a>
+									<div class="carousel-caption">
+									Final Design Sketches
+									</div>
+								</div>
 							</div>
-						</p> <br>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</p> <br>
 					
-					<h4>Final Design</h4>
-						<p> We took the 6 most common problems faced by uber riders and made those options available upfront for users to select. In 5 star based rating system users had to convert their qualitative opinions into quantitative one. Through our design they can directly state the problem they faced. Additionally, driver would exactly know what problems riders are facing soo that they can improve upon them. The system all this without increasing any effort on the riders end. </p> <br>
+					<h4 style="color: black">FINAL DESIGN</h4>
+					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
+					<h4 class="sub-heading">Quick qualitative feedback</h4> -->
+						<p>We took the 6 most common problems faced by uber riders and made those options available upfront for users to select. In 5 star based rating system users had to convert their qualitative opinions into quantitative one. Through our design they can directly state the problem they faced. Additionally, driver would exactly know what problems riders are facing soo that they can improve upon them. The system all this without increasing any effort on the riders end.</p><br>
 				</div>
 			</div>
 		</div>
-	</div>
-			
-	<div class="row" style="background: url(image/uber/quote.jpg)  no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75); margin:0px"> 
-		<p> 
-			<a href="image/uber/1.png" title="Home" data-gallery>
-				<img src="image/uber/1.png" width="100%" class="col-md-offset-2 col-sm-3 col-md-2" style="padding: 15px;">
-			</a>
-			<a href="image/uber/2.png" title="Identifying Problems" data-gallery>
-				<img src="image/uber/2.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
-			</a>
-			<a href="image/uber/3.png" title="Reporting screen" data-gallery>
-				<img src="image/uber/3.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
-			</a>
-			<a href="image/uber/4.png" title="Reporting" data-gallery>
-				<img src="image/uber/4.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
-			</a>
-		</p>
-	</div> <br>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="project_content" id="links">
-					<h4>Conclusion</h4>
-						<p> In the end 5 star doesnt say much, what is five star for one is 3 star for other. Moreover, drivers should be given a chance to improve themselves. This system ensures that they get a fair chance. In the end this will help drivers to provide better service. Moreover, Uber would have to fire less riders as they would automatically get feedback on what they are doing wrong. <br> </p> 
-						<hr>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
-				<!-- <a href="alzi.html"> <- Alzi </a> -->
-			</div>
-			<div class="col-sm-5" style="text-align: right">
-				<a href="inking.html"> Inking -> </a>
-			</div>
-		</div>
-	</div>
-    
-	
+		
+		<div class="row" style="background-color: #eeeeee; margin:0px"> 
+			<p> 
+				<a href="image/uber/1.png" title="Home" data-gallery>
+					<img src="image/uber/1.png" width="100%" class="col-md-offset-2 col-sm-3 col-md-2" style="padding: 15px;">
+				</a>
+				<a href="image/uber/2.png" title="Identifying Problems" data-gallery>
+					<img src="image/uber/2.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+				</a>
+				<a href="image/uber/3.png" title="Reporting screen" data-gallery>
+					<img src="image/uber/3.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+				</a>
+				<a href="image/uber/4.png" title="Reporting" data-gallery>
+					<img src="image/uber/4.png" width="100%" class="col-sm-3 col-md-2" style="padding: 15px;">
+				</a>
+			</p>
+		</div> <br>
+	</div> <br><br>
 	
      <!-- Footer
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
 		<div class="container">
-			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Developed by Mehul Agrawal</p>
 			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
 				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
 				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;

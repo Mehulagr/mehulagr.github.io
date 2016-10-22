@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mehul Agrawal | Portfolio</title>
+    <title>Mehul Agrawal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mehul Agrawal">
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,700" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +29,7 @@
 
 	ga('create', 'UA-57952563-1', 'auto');
 	ga('send', 'pageview');
+
 	</script>
 	
 	<style>
@@ -38,10 +39,9 @@
 		}
 	</style>
 
-</head>
+  </head>
   <body>
 	
-	<!-- Navigaton -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,23 +52,39 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.html">mehul agrawal</a>
+			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
 		  </div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-			  <!-- <li> <a href="index.html#projects">Projects</a> </li> -->
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
+				  <li><a href="inking.html">Inking</a></li>
+				  <li><a href="tui.html">Tangible User Interface</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
+				  <li><a href="chemicable.html">Chemicable</a></li>
+				  <li><a href="letsteach.html">Let's Teach</a></li>
+				  <li><a href="cabage.html">Cabage</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
+				  <li><a href="hackathon.html">Hackathon</a></li>
+				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
+				</ul>
+			  </li>
 			  <li><a href="index.html#resume">Resume</a></li>
-			  <li><a href="index.html#contact">Contact</a></li>
-			  <li class="nav-projects hidden-xs" style="margin-right: 1px"><a href="cabage.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
-			  <li class="nav-projects hidden-xs"><a href="ozchi.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
 	
-	<!-- Bootstrap Image Gallery lightbox -->
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
 		<!-- The container for the modal slides -->
 		<div class="slides"></div>
@@ -104,60 +120,92 @@
 	</div>
 	
 	
-	<div class="project-jumbotron jumbotron" style="background: url(image/cover-02.jpg); background-size:cover;"> </div>
-	
-	<div class="project-title"> 
-		<div class="container"> 
-			<h3>A squeeze-gesture-based tangible product design for a television remote<br>
-			<small>Skweezee-mote</small></h3><br>
-			<p>Project Duration: May'13 - Jul'13 <b> | </b>  Individual <b> | </b> Intern Under: Prof. Luc Geurts and Prof. Vero Vanden Abeele</p><br>
-		</div>
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/cover-02.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">Skweezee-mote <br>
+				<small> A squeeze-gesture-based tangible product design for a television remote </small> 
+			</h3>
+		</span>
 	</div>
-  
-    <div class="project_content" id="links">
+
+	
+	<nav class="navbar-project">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<p> <b>Summary: </b> Skweezee-mote a squeeze gesture based cushion remote that is more suitable to comfortable enviroment of your drawing room as compared to hard design of existing remote designs. Problem statement was to create a product using this technology. We created a cushion shaped remote and applied user-centered methodology for designing gesture for the new cushion-remote. </p> 
-					<p> <b> My Role: </b> This was an individual person on this project so I did everything. </p> <br>
-				
-					<h4 style="color: black">INTRODUCTION</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
-						<p>Skweezees are soft objects, filled with conductive padding that can be deformed or squeezed by applying pressure. The electrodes sense the shape shifting of the conductive filling by measuring the changing resistance between every possible pair of electrodes. Moreover, Skweezees can be programmed to recognize specific shape deformations; users can record their own squeeze gestures and these gestures are afterwards distinguished.</p> <br>
-						<p><b>Problem statement</b> was to use Skweezee system to design a tangible product.</p>
-						<a href="image/skweezee/s0.jpg" title="Skweezee System" data-gallery> <img src="image/skweezee/s0.jpg" width="100%" /> </a><br>
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>May'13 - Jul'13</p></li>
+						  <li><p>Individual Intern</p></li>
+						  <li><p style="border-right: none;">Prof. Luc Geurts and Prof. Vero Vanden Abeele</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<!-- <ul class="nav navbar-nav navbar-right">
+						  <li><a href="http://skweezee.wordpress.com/" target="_blank">Blog</a></li>
+						  <li><a href="http://www.slideshare.net/MehulAgarwal/skweezee" target="_blank">Presentation</a></li>
+						</ul> -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://link.springer.com/chapter/10.1007/978-81-322-2229-3_35#page-1" target="_blank">Publication</a></li>
+							<li><a class="project-slides" href="image/cover-02.jpg" data-gallery> Slide Show </a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p class="intro_para"> Skweezee-mote a squeeze gesture based cushion remote that is more suitable to comfortable enviroment of your drawing room as compared to hard design of existing remote designs. Problem statement was to create a product using this technology. We created a cushion shaped remote and applied user-centered methodology for designing gesture for the new cushion-remote. </p> 
+					<p> <b> My Role: </b> This was an individual person on this project so I did everything. </p><br>
 						
-					<h4 style="color: black">STUDY OF EXISTING WORK</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<hr>
+						
+					<h4>Introduction</h4>
+						<p>Skweezees are soft objects, filled with conductive padding that can be deformed or squeezed by applying pressure. The electrodes sense the shape shifting of the conductive filling by measuring the changing resistance between every possible pair of electrodes. Moreover, Skweezees can be programmed to recognize specific shape deformations; users can record their own squeeze gestures and these gestures are afterwards distinguished. </p>
+						<p><b>Problem statement</b> was to use Skweezee system to design a tangible product.</p>
+						<a href="image/skweezee/s0.jpg" title="Skweezee System" data-gallery> <img src="image/skweezee/s0.jpg" width="100%" /> </a><br><br>
+					<!--
+					<h4>Methodology</h4>
+						<p>Literature and similar products were studied to identify the various fields were this product would be beneficial. We converged into specific problem areas taking considerations like technological effectiveness, time frame etc. Remote cushion was chosen as context of use for prototyping. A user study was conducted to check the most appropriate gestures for tasks like- starting TV, stopping TV, changing channel, increasing and decreasing volume. The users were given cushion and asked to perform various gestures related to functions of the remote. All participants will first perform the gestures blindfolded or normally. Then they were asked to modify the cushion using crafting material such that it helps them assist in performing gestures. Classification of gestures was done, followed by analysis to find the gestures appropriate for users. Prototype was developed based on the gestures which were defined using user research.</p><br>
+					-->
+						
+					<h4>Study of Exisisting Work</h4>
 						<p>Similar products were reviewed and the areas which they targeted (or proposed to target) were listed down. Delving into daily life of users to know the objects they use and problems they face, gave us probable areas where Skweezees can be beneficial. Children, Old-age and people with disorder were also considered as a potential users.<br>
 						Also other areas were thought/brainstormed about where soft objects seem useful. Through this exercise we try to diverge into Skweezee’s application domain.</p>
 						<p>With Children, Old age, Disorder, Wearable, One Handed Interaction, Full Body Interaction, Health and Wellness and others as starting point, mind mapping was done. Mind Mapping Helped answer various questions like- What are the objects that users interact with? What are the similar research done in those fields? How can Skweezee system prove useful in that area?<br><br>
 						Probable Areas that were considered were- Gaming Product for Chronic Pain, Re-designing Remote, Wrist Band, Interactive and programmable teddy bear, Interactive Jacket and Smart Sofa. These were narrowed down based on time constraint, technological constraint, etc.</p>
-						<a href="image/skweezee/s1.jpg" title="Mindmap of existing related work" data-gallery> <img src="image/skweezee/s1.jpg" width="100%" style="border: 1px solid #999;"/> </a><br>
+						<a href="image/skweezee/s1.jpg" title="Mindmap of existing related work" data-gallery> <img src="image/skweezee/s1.jpg" width="100%" style="border: 1px solid #999;"/> </a><br><br>
 						
-					<h4 style="color: black">USER STUDY</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+					<h4>User Study</h4>
 						<p>Remote has been there for long time and hasn’t changed much. The “technological and hard” remote doesn’t fit the comfortable environment (sofa, cushion and soft lights) of living room. Also, it often gets lost in some corner of the room. What if we convert the cushion of your sofa into your remote?<br><br>
 						Taking this as staring point it was decided to conduct a user to study what will be the gestures that would be most appropriate for users? How should the cushion look like? What gestures would be appropriate for users when they are not looking at the cushion?</p>
 						<p><a href="image/skweezee/s2.jpg" title="User study activity: Users performing Task 1" data-gallery><img src="image/skweezee/s2.jpg" width="100%"></a></p>
 						<p>“Wizard of OZ” user study was conducted with 20 users. The users were given cushion and asked to perform various gestures related to functions of remote. All participants will either performing the gestures without-blindfold or with-blindfold (Task 1) and then participate in the creation activity (Task 2). The functions that users were asked to accomplish were Start TV, Stop TV, Volume Up, Volume Down, Next Channel, Previous Channel, Menu Open, Menu Exit and Mute.</p>
 						<a href="image/skweezee/s3.jpg" title="User study activity: Users performing Task 2" data-gallery><img src="image/skweezee/s3.jpg" width="100%"></a>
 						</p><br>
-					
-					<h4 style="color: black">ANALYSIS</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+						
+					<h4>Analysis</h4>
 						<p><a href="image/skweezee/s4.jpg" title="Various re-designs of cusions during activity" data-gallery><img src="image/skweezee/s4.jpg" width="100%"></a></p>
 						<p>Analysis of gestures was conducted to identify the gestures most appropriate for users. Videos of each user was broken down to keep only the 9 gestures of each users for 20 users. Followed by open coding the gestures from the video. Then these open codes were axial coded to find the relationship among location of gesture, direction of gesture, type of gesture and function (task). </p>
 						<p><a href="image/skweezee/s5.jpg" title="Analysis of gestures" data-gallery><img src="image/skweezee/s5.jpg" width="100%"></a></p>
 						<p>Some additional considerations for finalizing gestures were that gestures should be easy to remember, gestures should be designed such that unintended gesture detection is minimal and that it can be performed without looking at cushion.</p><br>
-					
-					<h4 style="color: black">PROTOTYPING</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
+						
+					<h4>Conclusion of User Study and Prototyping</h4>
 						<p>Final Gestures that were considered for current prototype were-<br>
 						Start TV- Squeeze all of it<br>
 						Stop TV- Squeeze all of it<br>
@@ -167,17 +215,32 @@
 						Volume Up- Push Middle-top towards the center</p>
 						<p><a href="image/skweezee/s7.jpg" title="Prototype of cushion remote" data-gallery><img src="image/skweezee/s7.jpg" width="100%"></a></p>
 						<p>Conductive Cotton, Conductive Thread and Conductive Tape were used to make the prototype. And Processing was used to code the prototype.</p><br>
+					
+					<br>
 				</div>
 			</div>
 		</div>
-	</div> <br><br>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="tui.html"> <- Tangible User Interface </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="chemicable.html"> ChemicAble -> </a>
+			</div>
+		</div>
+	</div>
+    
+	
 	
      <!-- Footer
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
 		<div class="container">
-			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Developed by Mehul Agrawal</p>
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
 			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
 				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
 				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;

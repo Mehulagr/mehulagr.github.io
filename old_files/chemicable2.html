@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mehul Agrawal | Portfolio</title>
+    <title>Mehul Agrawal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mehul Agrawal">
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,700" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +29,7 @@
 
 	ga('create', 'UA-57952563-1', 'auto');
 	ga('send', 'pageview');
+
 	</script>
 	
 	<style>
@@ -38,10 +39,9 @@
 		}
 	</style>
 
-</head>
+  </head>
   <body>
 	
-	<!-- Navigaton -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div>
 		  <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,23 +52,39 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.html">mehul agrawal</a>
+			<a class="navbar-brand" href="index.html">Mehul Agrawal</a>
 		  </div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-			  <!-- <li> <a href="index.html#projects">Projects</a> </li> -->
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="uber.html">Uber</a></li>
+				  <li><a href="inking.html">Inking</a></li>
+				  <li><a href="tui.html">Tangible User Interface</a></li>
+				  <li><a href="skweezee.html">Skweezee-mote</a></li>
+				  <li><a href="chemicable.html">Chemicable</a></li>
+				  <li><a href="letsteach.html">Let's Teach</a></li>
+				  <li><a href="cabage.html">Cabage</a></li>
+				  <li><a href="eventapp.html">Techniche App</a></li>
+				  <li><a href="hackathon.html">Hackathon</a></li>
+				  <li><a href="ozchi.html">Ozchi</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="publication.html">Publications</a></li>
+				</ul>
+			  </li>
 			  <li><a href="index.html#resume">Resume</a></li>
-			  <li><a href="index.html#contact">Contact</a></li>
-			  <li class="nav-projects hidden-xs" style="margin-right: 1px"><a href="uber.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
-			  <li class="nav-projects hidden-xs"><a href="alzi.html" style="color: #ffffff;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+			  <li><a href="index.html#about">About</a></li>
+			  <li class="nav-contact hidden-xs"><a href="index.html#contact" style="color: #ffffff;"><img src="image/assets/contact.png" width="25px"></a></li>
+			  <li class="visible-xs-block"><a href="index.html#contact">Contact</a></li>
 			</ul>
 		  </div><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
 	
-	<!-- Bootstrap Image Gallery lightbox -->
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
 		<!-- The container for the modal slides -->
 		<div class="slides"></div>
@@ -104,54 +120,82 @@
 	</div>
 	
 	
-	<div class="project-jumbotron jumbotron" style="background: url(image/cover-06.jpg); background-size:cover;"> </div>
-	
-	<div class="project-title"> 
-		<div class="container"> 
-			<h3>Tangible Interaction Approach for Teaching Chemical Bonding<br>
-			<small>ChemicAble</small></h3><br>
-			<p>Project Duration: Jan'13 - Apr'12  <b> | </b>  Team: 4 <b> | </b> Academic Project</p><br>
-		</div>
+	<div class="jumbotron" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/cover-06.jpg); background-size:cover; margin: 0px; text-align: center; color: #ffffff;">
+		<span class="project_heading" style="">
+			<h1 style="margin-top: 100px;">ChemicAble <br>
+				<small> Tangible Interaction Approach for Teaching Chemical Bonding </small> 
+			</h3>
+		</span>
 	</div>
-  
-    <div class="project_content" id="links">
+
+	
+	<nav class="navbar-project">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<p> <b>Summary: </b> Chemistry has been a very theoretical subject. Students have to imagine all the reaction and electron transfer in thier mind. All this imagination is particularly hard for students who have newly started learning Chemistry. So we made an interactive table that will help students to better visualize and imagine how interaction takes place between atoms and molecule. This version of prototype consists of first 20 elements of pereodic table. </p> <br>
+				<div class="col-md-10 col-md-offset-1">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div>
+						<center>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float: none;">
+								Project Details
+							</button>
+						</center>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-project-items" id="bs-example-navbar-collapse-2" style="overflow-x: hidden;">
+						<ul class="nav navbar-nav navbar-left">
+						  <li><p>Jan'13 - Apr'12</p></li>
+						  <li><p>Group of 4</p></li>
+						  <li><p style="border-right: none;">Guide: Asst. Prof. Keyur Sorathia</p></li>
+						  <!--
+						  <li><p style="border-right: none; padding-top: 8px; padding-bottom: 7px;"><img src="image/assets/slides.png"> <img src="image/assets/slides.png"></p></li>
+						  -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://github.com/Mehulagr/ChemicAble" target="_blank">Code</a></li>
+							<li><a href="content/2013_apchi_chemicable.pdf" target="_blank">Research Paper</a></li>
+							<li><a class="project-slides" href="image/cover-06.jpg" data-gallery> Slide Show </a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+  
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="project_content" id="links">
+					<p class="intro_para"> Chemistry has been a very theoretical subject. Students have to imagine all the reaction and electron transfer in thier mind. All this imagination is particularly hard for students who have newly started learning Chemistry. So we made an interactive table that will help students to better visualize and imagine how interaction takes place between atoms and molecule. This version of prototype consists of first 20 elements of pereodic table. </p> 
+					<p> <b>My Role:</b> Secondary Study, Prototype Development and Testing </p><br>
 					
-					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/sP-0YfFJaso" frameborder="0" allowfullscreen></iframe></center></div><br>
-					
-					<h4 style="color: black">INTRODUCTION</h4>
-					ChemicAble is an interactive tabletop interface that helps students of grade 8-10 understand ionic compound formation. It acts as an exercise tool for students to understand better the concepts of ionic bonding by letting them explore and learn. Lewis dot structure which is being taught in these classes, formed the basis of our instructional content for the prototype. </p> <br>
-				
-					<h4 style="color: black">SECONDARY RESEARCH</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">What makes Mavenly unique and where do competitors lack?</h4> -->
-						<p>We studied the papers about tangible interface in education to gather how and what kind of interfaces have been used. Another area that we focused on was use of tangible interface chemistry education specifically to know what all concepts have been taught using tangible tools. Simultaneously we went over through chemistry book of grade 8-10 students. The instructional content was take from ncert books for prototype.</p> <br>
+					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/sP-0YfFJaso" frameborder="0" allowfullscreen></iframe></center></div>
 						
-					<p><a href="image/chemicable/c1_2.jpg" title="Current Method of Teaching Lewis Dot Structure" data-gallery> <img src="image/chemicable/c1_2.jpg" width="100%" alt="Current Method of Teaching Lewis Dot Structure" style="border: 1px solid #999;"/> </a></p> <br>
-			
-					<h4 style="color: black">PROTOTYPE</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">How can we make the posting process natural?</h4> -->
-						<p>The prototype was developed using processing and rear-di like setup. And the development was done with help of processing using TUIO library.</p><br>
-						
-					<p><a href="image/chemicable/c5.jpg" title="ChemicAble Setup" data-gallery> <img src="image/chemicable/c5.jpg" width="100%" alt="ChemicAble Setup" style="border: 1px solid #999;"/> </a> </p>
+					<hr>
 					
-					<p>Following were a few considerations while designing the system –<br>
+					<h4>Introduction</h4>
+						<p>ChemicAble is an interactive tabletop interface that helps students of grade 8-10 understand ionic compound formation. It acts as an exercise tool for students to understand better the concepts of ionic bonding by letting them explore and learn. Lewis dot structure which is being taught in these classes, formed the basis of our instructional content for the prototype.</p><br>
+						
+					<h4>Secondary Study</h4>
+						<p>We studied the papers about tangible interface in education to gather how and what kind of interfaces have been used. Another area that we focused on was use of tangible interface chemistry education specifically to know what all concepts have been taught using tangible tools. Simultaneously we went over through chemistry book of grade 8-10 students. The instructional content was take from ncert books for prototype.</p>
+						<p><a href="image/chemicable/c1_2.jpg" title="Current Method of Teaching Lewis Dot Structure" data-gallery> <img src="image/chemicable/c1_2.jpg" width="100%" alt="Current Method of Teaching Lewis Dot Structure" style="border: 1px solid #999;"/> </a></p><br>
+						
+					<h4>Prototype</h4>
+						<p>The prototype was developed using processing and rear-di like setup. And the development was done with help of processing using TUIO library.</p>
+						<p><a href="image/chemicable/c5.jpg" title="ChemicAble Setup" data-gallery> <img src="image/chemicable/c5.jpg" width="100%" alt="ChemicAble Setup" style="border: 1px solid #999;"/> </a> </p>
+						<p>Following were a few considerations while designing the system –<br>
 						Designed for the Indian students.<br>
 						Learning is aimed through exploration, trials and failure.<br>
 						Learning is enhanced by collaboration.<br>
 						Users proceed through small steps with appropriate feedback.</p>
+						<p><a href="image/chemicable/c4.jpg" title="ChemicAble Display" data-gallery> <img src="image/chemicable/c4.jpg" alt="ChemicAble Display" width="100%" /> </a> </p><br>
 						
-					<p><a href="image/chemicable/c4.jpg" title="ChemicAble Display" data-gallery> <img src="image/chemicable/c4.jpg" alt="ChemicAble Display" width="100%" /> </a> </p><br>
-					
-					<h4 style="color: black">WORKING OF PROTOTYPE</h4>
+					<h4>Working of Prototype</h4>
 						<p><a href="image/chemicable/c2.jpg" title="System Taskflow" data-gallery> <img src="image/chemicable/c2.jpg" alt="System Taskflow" width="100%" /> </a> </p>
 						<p>When atoms are placed on the table, their outermost shell is displayed with the valence electrons. Placing any subsequent atom on the table will result in transfer of electrons between them if possible.  Children play around with the tokens to arrive at the correct and stable compound and thus learn by exploration, trials and failures which is one of the most effective and fun ways to understand new concepts and to foster the learning process.  Appropriate scaffolding is provided at every step to help the children.</p><br>
 						
-					<h4 style="color: black">TESTING</h4>
+					<h4>Testing</h4>
 						<p>
 							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
 								<!-- Indicators -->
@@ -186,19 +230,32 @@
 								</a>
 							</div>
 						</p>
-						
 						<p>The final prototype was tested with students of Kendriya Vidhyalaya and their feedback was noted. The result showed positive response towards playfulness and as an exercise tool. However, certain shortcomings were also observed which could be used to increase the system usability and effectiveness in future.</p><br>
+					
 				</div>
 			</div>
 		</div>
-	</div> <br><br>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-offset-1" style="text-align: left">
+				<a href="skweezee.html"> <- Skweezee-mote </a>
+			</div>
+			<div class="col-sm-5" style="text-align: right">
+				<a href="letsteach"> Lets Teach -> </a>
+			</div>
+		</div>
+	</div>
+    
+	
 	
      <!-- Footer
       ================================================== -->
 
 	<footer class="bs-footer" role="contentinfo">
 		<div class="container">
-			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Developed by Mehul Agrawal</p>
+			<p class="pll-left col-xs-4" style="padding-top: 7px; padding-bottom: 7px">Mehul Agrawal</p>
 			<p class="pull-right col-xs-8" style="text-align: right; text-align: -webkit-right;">
 				<a href="mailto:agrawal.mehul92@gmail.com"> <img src="image/assets/email.png" width="35px"> </a> &nbsp;
 				<a href="https://www.linkedin.com/in/mehulagr"> <img src="image/assets/linkedin.png" width="35px"> </a> &nbsp;
