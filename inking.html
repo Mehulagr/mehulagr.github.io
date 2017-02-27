@@ -118,7 +118,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-8 col-md-offset-2">
-					<p> <b>Summary: </b> Although the existing inking and notetaking apps for tablet like Evernote, OneNote etc. are powerful, but they do not harness all the capabilities of digital medium. Features in these app are limited to most common functions like cut, copy, paste, undo, redo, stroke color changes, etc. The digital medium is very powerful and can do many more things like perform calculations, visualize, search etc. We are trying to embed these features in a note taking app without complicating its interface. We propose a novel stylus based gesture and keyword recognition system that can be used to access these features in simpler way. </p> <br>
+					<p> <b>Summary: </b> The existing inking and note taking apps for tablet like Evernote, OneNote etc. are powerful, but they neither harness all the capabilities of digital medium nor leverage the day-to day actions that people perform while taking notes using paper and pen.. Although these apps add value by integrating common functions like cut, copy, paste, undo, redo, stroke color changes, etc. but they don't allow users to  perform complex functions like calculations, visualize curves, search etc. </p> 
+
+					<p> We looked at the user group of college student who actively take notes during lecture and  while organising event meetings. Our attempt was to abstract their behavior and design a seamless note-taking application that combines “natural” actions with powerful digital functions. The application was designed specifically for Microsoft Surface Tablet and proposed features leveraged tablet specifications including the stylus. </p> <br>
+
 					
 					<div class="videoWrapper"><center><iframe width="640" height="360" src="http://www.youtube.com/embed/ASaXe4QybIA" frameborder="0" allowfullscreen></iframe></center></div> <br><br>
 					
@@ -127,12 +130,13 @@
 					<h4 style="color: black">SECONDARY RESEARCH</h4>
 					<hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">What is inking?</h4>
-					In this context, inking is interaction between pen and tablet. Market is flooded with apps that use Inking capabilities, so it was important for us to understand- What all is already existing? What are most common features in inking applications? Gaps in the existing market? Simultaneously, research papers helped us to define some problems that users face while using inking applications and their solutions. </p> <br><br>
+					In this context, inking is the interacting with tablet using stylus. A lot of apps like evernote, onenote allow stylus input, so it was essential for us to understand advantages and limitations of these apps. We studied different features of the inking applications. Additionally, research papers helped in defining some problems that users face while using inking applications. </p> <br><br>
 					
 					<h4 style="color: black">OBSERVATION AND INTERVIEWS</h4>
 					<hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">How is user interaction with pen and paper?</h4>
-						<p> Users were questioned to understand their existing inking patterns and needs. Questions for user study encompassed all three aspects of inking i.e. notes, diagrams and drawings. Ten users were interviewed in the process. </p>
+						<p> We interviewed 10 users to understand the content of the notes and tools used to make notes. We also tried to investigate what made note taking easier and what problems were faced by the users. We also examined users’ notes-books. Interestingly, all of them had some markers (star, underline, circles, etc) to highlight important items like date, formula, bullets etc. Also, there were a lot of scribbles here and there on pages. </p>
+						<p>The insights from this step, prompted us to dig deeper and design an activity-based user study to understand user’s behavior while taking notes. <br>
 						
 					<p>
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -172,7 +176,13 @@
 					<h4 style="color: black">USER ACTIVITY</h4>
 					<hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">How does behavior change from paper to tablet? </h4>
-						<p>We wanted to take a closer look at how users write for discovering their behavior and micro-interactions. We designed an acctivity where they watched an online lecture and took notes and then did the same on paper.</p>
+						<p>We designed an activity to discover the behavior of users when they took notes on paper compared to when they took notes on tablet. In the activity user’s had to watch an online lecture and take notes first on paper using pen/pencil and then repeat the same activity on tablet using stylus/ finger. We observed changes in-</p>
+						<ul> 
+							<li>holding patterns of pen vs stylus,</li>
+							<li>the interaction with paper vs screen and</li>
+							<li>the way of taking notes in one medium (paper) to another (tablet).</li>
+						</ul>
+						<br>
 						
 					<p>
 						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
@@ -240,7 +250,7 @@
 					<h4 style="color: black">INSIGHTS</h4>
 					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">How can we make the posting process natural?</h4> -->
-						<p> We came across some really interesting insights. Users performed micro-interactions like making <b>side notes</b>, “<b>underlining</b>” important points and <b>marking content</b> for later review using different symbols, markers etc. They used other tools in association with the activity of notetaking like calculators, convertors, graphs, etc. They didn't want to think too much while taking notes. They used non-preferred hand for interacting with paper: using one hand to move (reposition) the paper and other to write on paper.</p><br>
+						<p> We came across some really interesting insights. Users performed micro-interactions like making <b>side notes</b>, "<b>underlining</b>” the important points and <b>marking</b> content for later review using different symbols, markers etc. They supported notetaking with other tools like calculators, converters, graphs, scale etc. They didn't want to think too much while taking notes. They used non-preferred hand for interacting with paper: using one hand to move (reposition) the paper and other to write on paper.</p><br>
 						
 					<div class="row" style="text-align: center; color: black">
 						<div class="col-xs-6 col-sm-3"> <img src="image/inking/icon1.png" width="70%" alt="Micro-interections "> <br><br> Micro-interections </div>
@@ -252,7 +262,7 @@
 					<h4 style="color: black">SCENARIOS</h4>
 					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">How can we make the posting process natural?</h4> -->
-						<p> Then we thought about ideas to solve the problem along with scenarios in with scenarios in which they could help. Two scenarios that stood out to us were using a second surface were we can keep notes and second using gestures to perform tasks such as adding reminders, highlighting etc.</p>
+						<p> Based on insights, we created  scenarios to generate ideas. Among numerous scenarios, two scenarios that stood out were using a second surface for keeping notes and second using gestures to perform tasks such as adding reminders, highlighting etc.  </p>
 						
 					<p>
 						<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel2">
@@ -292,19 +302,21 @@
 					<h4 style="color: black">CONCEPT</h4>
 					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
 					<h4 class="sub-heading">How can we make the posting process natural?</h4> -->
-					<blockquote>Augment capability of notetaking app by providing advanced features using pen (stylus) based gestures or keywords.</blockquote>
-						<p>How many additional features does evernote provide as compared to paper? The current app like evernote, one note etc. have only few features like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features using a note taking app. These functions have common umbrella of accessing them i.e. pen based gestures/ keywords. A prototype with animation and gestures was designed using powerpoint. Here is explanation of interactions in the app-</p> <br>
-					<p><b>Avoiding Faulty Detection</b></p>
+					<blockquote>Augment capability of note-taking app by providing advanced features using pen (stylus) gesture based interaction.</blockquote>
+						<p>We proposed a tool-centered interface which re-used existing and familiar components of the note taking application. This interface was extended to a Second Surface which would  function as an actionable space for your static notes. The Second surface leveraged the proposed interaction paradigm which uses pen-based gestures to replicate experience of taking notes on paper onto digital canvas.</p>
+						<p><b>Gap in current market:</b> Most application use multi-touch or marking menus. None of the popular applications surveyed used any form of gestural language. Additionally, they didn’t go beyond simple functions.</p>
+						<p><b>Novelty:</b> The application differed in the way user interacts with the system to perform common tasks. The gestures were adopted from the daily behavior of user while taking notes.</p> <br>
+					<p><b>Second Surface: Avoiding Faulty Detection</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-12"><p>When using other writing apps, the users encountered many problems with faulty detection. This led to a poor experience with the apps. So, we gave them an option to shift between two modes so that they can write with ease in one mode and perform other smart functions in other mode.</p></div>
+						<div class="col-xs-12"><p>When using other writing apps, the users encountered many problems with faulty detection. This led to a poor experience with the apps. Thus, we designed second surface as an actionable mode that would allow them to  write with ease in one mode (Note Mode) and perform other smart functions in other mode (Second Surface).</p></div>
 						<div class="col-xs-12 mavenly-screens"> 
 							<a class="project-slides" href="image/inking/mode.png" data-gallery> <img src="image/inking/mode.png" width="100%" alt="Use of other tools"> </a> <br> 
 						</div>
 					</div> <br><br>
 
-					<p><b>Basic Interaction: Change Mode - Gesture</b></p>
+					<p><b>Basic Interaction: Change Mode -> Gesture</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-6 col-md-4"> Using the app is as simple as long press to change mode and then ask it perform any function that you want. In this case user wants to "Convert 1.2 minutes to degree." Similary user can convert between miles and km. </div>
+						<div class="col-xs-6 col-md-4"> Users can write anything in writing mode and long press takes user to the second surface. User can perform any gestures on this mode to perform action. Some functions work similar to the smart search on google search engine. For example, by writing  "Convert 1.2 minutes to degree." would convert the selection to degrees. </div>
 						<div class="col-xs-6 col-md-8 mavenly-screens"> 
 							<a class="project-slides" href="image/inking/clip6.gif" data-gallery> <img src="image/inking/clip6.gif" width="100%" alt="Use of other tools"> </a>
 						</div>
@@ -312,15 +324,15 @@
 
 					<p><b>Contextual Menu</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-6 col-md-12"> The menu changes contextually to support user as he goes from Writing Mode to Smart/ Augmented Mode. In augmented mode the app will remember recent gestures to make tasks like multiple copy paste or calulations easier.<br><br></div>
+						<div class="col-xs-6 col-md-12"> The menu changes contextually to support user as he goes from ‘writing mode’ to ‘second surface’. The menu of second surface will remember recent gestures to perform frequently used gestures easily. <br><br></div>
 						<div class="col-xs-6 col-md-12 mavenly-screens"> 
 							<a class="project-slides" href="image/inking/menu.jpg" data-gallery> <img src="image/inking/menu.jpg" width="100%" alt="Use of other tools"> </a> <br> 
 						</div>
 					</div> <br><br>
 
-					<p><b>Perform Action on certain text: Change Mode - Select - Gesture</b></p>
+					<p><b>Perform Action on certain text: Change Mode -> Select -> Gesture</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-6 col-md-4"> User can also perform function like calculate, convert on certain text from the notes. Example, in this user wants to mark a formula so that he can refer to it later. </div>
+						<div class="col-xs-6 col-md-4"> Users can mark certain parts of text so that they can refer to it later. They can select that text and perform actions like highlighting, calculation, etc., in this example user wants to mark a formula so that he can refer to it later. </div>
 						<div class="col-xs-6 col-md-8 mavenly-screens"> 
 							<a class="project-slides" href="image/inking/clip1.gif" data-gallery> <img src="image/inking/clip1.gif" width="100%" alt="Use of other tools"> </a> 
 						</div>
@@ -328,7 +340,11 @@
 
 					<p><b>Multiple Access-points</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-6 col-md-4"> To refer to the marked item user can perform star gesture without selecting a text or click on star icon next to the text or click Marked button from the contextual menu. <br><br> </div>
+						<div class="col-xs-6 col-md-4"> To refer to the marked item, <br>
+							1. user can perform star gesture without selecting a text or</br>
+							2. tap on star icon next to the text or </br>
+							3. tap Marked button from the contextual menu.</br>
+							Multiple access points makes the application intuitive and easy to navigate. <br> </div>
 						<div class="col-xs-6 col-md-8"> 
 							<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel3">
 								<!-- Indicators -->
@@ -364,9 +380,9 @@
 						</div>
 					</div> <br><br>
 
-					<p><b>Advanced Functions</b></p>
+					<p><b>Advance Functions</b></p>
 					<div class="row" style="padding:10px; background-color: #f5f5f5">
-						<div class="col-xs-6 col-md-4"> The user can not only do this but perform advanced function like plot a graph for some equation or setting up a calendar event or sharing the whole note. </div>
+						<div class="col-xs-6 col-md-4"> What if user is in a meeting and they decide next meeting time or user is in a class and he wants to refer to a graph? The user can perform advance function like plotting a graph, setting up a calendar event or sharing the whole note using the second surface. </div>
 						<div class="col-xs-6 col-md-8 mavenly-screens"> 
 							<a class="project-slides" href="image/inking/clip8.gif" data-gallery> <img src="image/inking/clip8.gif" width="100%" alt="Use of other tools"> </a> 
 						</div>
@@ -389,13 +405,9 @@
 						</div>
 					</div> <br><br> -->
 
-					<h4 style="color: black">Learnings</h4>
-					<!-- <hr align="left" width="10%" style="margin: 10px 0px">
-					<h4 class="sub-heading">How can we make the posting process natural?</h4> -->
-					<blockquote>Augment capability of notetaking app by providing advanced features using pen (stylus) based gestures or keywords.</blockquote>
-						<p>How many additional features does evernote provide as compared to paper? The current app like evernote, one note etc. have only few features like cut, copy, paste, undo redo stroke colour and width change, etc. But digital medium is very powerful and can do many things like perform calculations, visualize, search etc. We are trying to provide these features using a note taking app. These functions have common umbrella of accessing them i.e. pen based gestures/ keywords. A prototype with animation and gestures was designed using powerpoint. Here is explanation of interactions in the app-</p> <br>
-
-					<p>Novelty of the app lies in the way user interacts with the system to perform common tasks. The gestures are adopted from the daily behavior of user while taking notes. </p><br>
+					<h4 style="color: black">FUTURE WORK AND LEARNINGS</h4>
+					<p><b>Future Work:</b> The efficiency of such an interaction model will only be confirmed upon testing it against application with marking menus or touch and tap only applications. If successful: It could open immense opportunities the way user can “naturally” interact with system using pen as an input modality.</p>
+					<p><b>Learning:</b> My biggest takeaway was working with stakeholders. There were a lot of discussion around will this be useful for Microsoft and how does it match up with existing Microsoft products. The other major learning was “devil in the details” while designing the interactions and keeping them simple yet making sure the probability of false positives is less.</p><br>
 
 
 				</div>
