@@ -122,6 +122,35 @@ blockquote {
 }
 
 /* Project Thumbnails home page */
+.newportfoliolist{
+	width: 100%; 
+	height: 200px; 
+	background-position: center center; 
+	background-size: cover;
+	text-align: center; 
+	display: table;
+}
+
+.newportfoliolist span{
+	display: none;
+}
+
+.newportfoliolist:hover span {
+		display: table-cell; 
+		vertical-align: middle; 
+		width: 100%; 
+		height: 100%; 
+		background-color: rgba(0, 0, 0, 0.65); 
+		background-blend-mode: normal; 
+		color: white;
+}
+
+.newportfoliolist span a h3, .newportfoliolist span a h3 small {
+	color: white
+}
+
+
+/* Project Thumbnails home page */
 #portfoliolist .portfolio .thumbnail {
 	border: None;
 	box-shadow: None;
